@@ -1,5 +1,11 @@
+body {
+    font: 1em sans-serif;
+}
 
 .topnav {
+    position: absolute;
+    top :0px;
+    left: 0px;
     width: 100%;
     background-color: whitesmoke;
     overflow: hidden;
@@ -8,10 +14,11 @@
 .topnav a {
     float: left;
     text-align: center;
-    padding: 14px 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     text-decoration: none;
     font-size: 17px;
-    width: 30%;
+    width: 33.33%;
     opacity: 100%;
 }
 
@@ -58,6 +65,25 @@
 
 .ascii-station {
     position: absolute;
+    color: black;
+    zoom: 7%;
+    left: 47%;
+    bottom: 0px;
+}
+
+.ascii-train-white {
+    position: absolute;
+    bottom: 0px;
+     zoom: 8%;
+     font-family: Courier;
+     color: white;
+     font-size:8pt;
+     font-weight: bold;
+}
+
+.ascii-station-white {
+    position: absolute;
+    color: white;
     zoom: 7%;
     left: 47%;
     bottom: 0px;

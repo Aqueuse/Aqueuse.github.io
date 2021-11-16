@@ -6,27 +6,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="show('aboutMe')">
 <div class="topnav">
   <a class="aboutMeNav" onclick="show('aboutMe')">Qui suis je ?</a>
   <a class="mesProjetsNav" onclick="show('mesProjets')">Mes projets</a>
   <a class="chroniqueNav" onclick="show('chronique')">Chronique</a>
 </div>
 
-<div id="aboutMe" class="aboutMeBlock" style="display: block;">
-  <p>Ces temps ci, je bosse sur Java EE et je tente de stabiliser mon site perso pour ne plus jamais le perdre <3</p>
-</div>
+<div style="position: absolute; top: 50px; margin-left: 2%;">
+  <div id="aboutMe" class="aboutMeBlock" style="display: block;">
+    <p>Ces temps ci, je bosse sur Java EE et je tente de stabiliser mon site perso pour ne plus jamais le perdre</p>
+  </div>
 
-<div id="mesProjets" class="mesProjetsBlock" style="display: none;">
-  <p>Ours-Agile, mon robot nounours</p>
-  <p>Poseidon majordome, a workshop to learn and love datascience</p>
-  <p>Multipass, social network multi sharing</p>    
-</div>
+  <div id="mesProjets" class="mesProjetsBlock" style="display: none;">
+    <p>Ours-Agile, mon robot nounours</p>
+    <p>Poseidon majordome, a workshop to learn and love datascience</p>
+    <p>Multipass, social network multi sharing</p>    
+  </div>
 
-<div id="chronique" class="chroniqueBlock" style="display: none;">
-  <p><a href="https://aqueuse.github.io/CV/">Mon CV</a></p>
-  <p><a href="https://github.com/Aqueuse">Mon code sur Github</a></p>
-  <p><a href="https://www.twitch.tv/aqueuse">Ma chaine Twitch</a></p>
+  <div id="chronique" class="chroniqueBlock" style="display: none;">
+    <p><a href="https://aqueuse.github.io/CV/">Mon CV</a></p>
+    <p><a href="https://github.com/Aqueuse">Mon code sur Github</a></p>
+    <p><a href="https://www.twitch.tv/aqueuse">Ma chaine Twitch</a></p>
+  </div>
 </div>
 
 <div class="ascii-train-animation">
@@ -143,9 +145,39 @@ cKKKKKKKKKKKKKKKKOOOxOKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
 </div>
 
 <script>
-  function show(id) {
-    var divToShow = document.getElementById(id);
-    console.log(divToShow);
+function show(id) {
+  document.getElementById(id).style = "display:block";
+  switch (id) {
+    case "aboutMe":
+      document.body.bgColor = "#612666";
+      document.getElementById("train").className = "ascii-train-white";
+      document.getElementById("station").className = "ascii-station-white";
+      document.getElementById('chronique').style = "display:none";
+      document.getElementById('mesProjets').style = "display:none";
+      break;
+    case "mesProjets":
+      document.body.bgColor = "#A1A6B4";
+      document.getElementById("train").className = "ascii-train";
+      document.getElementById("station").className = "ascii-station";
+      document.getElementById('chronique').style = "display:none";
+      document.getElementById('aboutMe').style = "display:none";
+      break;
+    case "chronique":
+      document.body.bgColor = "#94C5CC";
+      document.getElementById("train").className = "ascii-train";
+      document.getElementById("station").className = "ascii-station";
+      document.getElementById('aboutMe').style = "display:none";
+      document.getElementById('mesProjets').style = "display:none";
+      break;
+    default:
+      document.body.bgColor = "#612666";
+      document.getElementById("train").className = "ascii-train";
+      document.getElementById("station").className = "ascii-station";
+      document.getElementById('chronique').style = "display:none";
+      document.getElementById('mesProjets').style = "display:none";
+      break;
+  }
+    console.log(document.getElementById(id).bgColor);
   }
 </script>
 
