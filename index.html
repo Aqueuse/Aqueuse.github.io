@@ -8,9 +8,25 @@
 
 <body>
 <div class="topnav">
-  <a class="aboutMe" href="aboutMe.html">Qui suis je ?</a>
-  <a class="mesProjets" href="mesProjets.html">Mes projets</a>
-  <a class="chronique" href="chronique.html">Chronique</a>
+  <a class="aboutMe" onclick="show('aboutMe')">Qui suis je ?</a>
+  <a class="mesProjets" onclick="show('mesProjets')">Mes projets</a>
+  <a class="chronique"  onclick="show('chronique')">Chronique</a>
+</div>
+
+<div id="aboutMe">
+  <p>Ces temps ci, je bosse sur Java EE et je tente de stabiliser mon site perso pour ne plus jamais le perdre <3</p>
+</div>
+
+<div id="mesProjets">
+  <p>Ours-Agile, mon robot nounours</p>
+  <p>Poseidon majordome, a workshop to learn and love datascience</p>
+  <p>Multipass, social network multi sharing</p>    
+</div>
+
+<div id="chronique">
+  <p><a href="https://aqueuse.github.io/CV/">Mon CV</a></p>
+  <p><a href="https://github.com/Aqueuse">Mon code sur Github</a></p>
+  <p><a href="https://www.twitch.tv/aqueuse">Ma chaine Twitch</a></p>
 </div>
 
 <div class="ascii-train-animation">
@@ -125,7 +141,15 @@ cKKKKKKKKKKKKKKKKOOOxOKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
 </pre>
 </div>
 </div>
-</body>
+
+<script>
+  function show(id) {
+    var divToShow = document.getElementById(id);
+
+    console.log(divToShow);
+  }
+</script>
+
 <script src="train.js"></script>
 
 </body>
