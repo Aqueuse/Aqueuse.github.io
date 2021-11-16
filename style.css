@@ -1,0 +1,65 @@
+
+.topnav {
+    width: 100%;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 30%;
+    opacity: 100%;
+}
+
+.topnav a:hover {
+    opacity: 80%;
+}
+
+.topnav a.active {
+    background-color: purple;
+}
+
+.aboutMe {
+    background-color: #612666;
+    color: #fff;
+}
+
+.mesProjets {
+    background-color: #A1A6B4;
+    color: #000;
+}
+
+.chronique {
+    background-color: #94C5CC;
+    color: #000;
+}
+
+
+.ascii-train-animation {
+    position: absolute;
+    width: 98%;
+    height: 20%;
+    bottom: 5px;
+    overflow-x: hidden;
+}
+
+.ascii-train {
+    position: absolute;
+    bottom: 0px;
+     zoom: 8%;
+     font-family: Courier;
+     color: black;
+     font-size:8pt;
+     font-weight: bold;
+}
+
+.ascii-station {
+    position: absolute;
+    zoom: 7%;
+    left: 47%;
+    bottom: 0px;
+}
