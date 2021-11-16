@@ -23,21 +23,24 @@
     background-color: purple;
 }
 
-.aboutMe {
+.aboutMeNav, .aboutMeBlock {
     background-color: #612666;
     color: #fff;
 }
 
-.mesProjets {
+.mesProjetsNav, .mesProjetsBlock {
     background-color: #A1A6B4;
     color: #000;
 }
 
-.chronique {
+.chroniqueNav, .chroniqueBlock {
     background-color: #94C5CC;
     color: #000;
 }
 
+ {
+
+}
 
 .ascii-train-animation {
     position: absolute;

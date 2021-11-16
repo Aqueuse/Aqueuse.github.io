@@ -8,22 +8,22 @@
 
 <body>
 <div class="topnav">
-  <a class="aboutMe" onclick="show('aboutMe')">Qui suis je ?</a>
-  <a class="mesProjets" onclick="show('mesProjets')">Mes projets</a>
-  <a class="chronique"  onclick="show('chronique')">Chronique</a>
+  <a class="aboutMeNav" onclick="show('aboutMe')">Qui suis je ?</a>
+  <a class="mesProjetsNav" onclick="show('mesProjets')">Mes projets</a>
+  <a class="chroniqueNav" onclick="show('chronique')">Chronique</a>
 </div>
 
-<div id="aboutMe">
+<div id="aboutMe" class="aboutMeBlock" style="display: block;">
   <p>Ces temps ci, je bosse sur Java EE et je tente de stabiliser mon site perso pour ne plus jamais le perdre <3</p>
 </div>
 
-<div id="mesProjets">
+<div id="mesProjets" class="mesProjetsBlock" style="display: none;">
   <p>Ours-Agile, mon robot nounours</p>
   <p>Poseidon majordome, a workshop to learn and love datascience</p>
   <p>Multipass, social network multi sharing</p>    
 </div>
 
-<div id="chronique">
+<div id="chronique" class="chroniqueBlock" style="display: none;">
   <p><a href="https://aqueuse.github.io/CV/">Mon CV</a></p>
   <p><a href="https://github.com/Aqueuse">Mon code sur Github</a></p>
   <p><a href="https://www.twitch.tv/aqueuse">Ma chaine Twitch</a></p>
@@ -145,7 +145,6 @@ cKKKKKKKKKKKKKKKKOOOxOKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
 <script>
   function show(id) {
     var divToShow = document.getElementById(id);
-
     console.log(divToShow);
   }
 </script>
