@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'>
 
@@ -13,7 +13,7 @@
   <a class="chroniqueNav" onclick="show('chronique')">Chronique</a>
 </div>
 
-<div style="position: absolute; top: 50px; margin-left: 2%;">
+<div id="block" class="block left">
   <div id="aboutMe" class="aboutMeBlock" style="display: block;">
     <h1>Bienvenue dans ma tanière</h1>
     <p>Je m'appelle Laura Bécognée et je suis une geekette/Hackeuse/bidouilleuse.</p>
@@ -25,12 +25,14 @@
   </div>
 
   <div id="mesProjets" class="mesProjetsBlock" style="display: none;">
+    <h1>Mes projets</h1>
     <p>Ours-Agile, mon robot nounours</p>
     <p>Poseidon majordome, a workshop to learn and love datascience</p>
     <p>Multipass, a social network multi sharing website</p>    
   </div>
 
   <div id="chronique" class="chroniqueBlock" style="display: none;">
+    <h1>Les Chroniques d'Aqueuse</h1>
     <p>Les choses reprennent très doucement leur cours après une très grosse coupure d'internet (trois semaines quasiment). J'en aurai au moins profité pour optimiser l'organisation de la maison
       et notamment du coin craft.
     </p>
@@ -156,22 +158,25 @@ function show(id) {
   switch (id) {
     case "aboutMe":
       document.body.bgColor = "#612666";
-      document.getElementById("train").className = "ascii-train-white";
-      document.getElementById("station").className = "ascii-station-white";
+      document.getElementById("train").classList.add("whiteText");
+      document.getElementById("station").classList.add("whiteText");
+      document.getElementById('block').classList.value = "block left";
       document.getElementById('chronique').style = "display:none";
       document.getElementById('mesProjets').style = "display:none";
       break;
     case "mesProjets":
-      document.body.bgColor = "#A1A6B4";
-      document.getElementById("train").className = "ascii-train";
-      document.getElementById("station").className = "ascii-station";
+      document.body.bgColor = "#9FC2CC";
+      document.getElementById("train").classList.remove("whiteText");
+      document.getElementById("station").classList.remove("whiteText");
+      document.getElementById('block').classList.value = "block middle";
       document.getElementById('chronique').style = "display:none";
       document.getElementById('aboutMe').style = "display:none";
       break;
     case "chronique":
-      document.body.bgColor = "#94C5CC";
-      document.getElementById("train").className = "ascii-train";
-      document.getElementById("station").className = "ascii-station";
+      document.body.bgColor = "#F1ECCE";
+      document.getElementById("train").classList.remove("whiteText");
+      document.getElementById("station").classList.remove("whiteText");
+      document.getElementById('block').classList.value = "block right";
       document.getElementById('aboutMe').style = "display:none";
       document.getElementById('mesProjets').style = "display:none";
       break;
@@ -183,8 +188,7 @@ function show(id) {
       document.getElementById('mesProjets').style = "display:none";
       break;
   }
-    console.log(document.getElementById(id).bgColor);
-  }
+}
 </script>
 
 <script src="train.js"></script>

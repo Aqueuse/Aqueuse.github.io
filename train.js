@@ -1,8 +1,7 @@
 let trainLeftPos = 4000;
 let trainOrientation = "right";
 let speed = 16;
-let trainTimer;
-let trainTimerDuration = 60;
+let trainTimer = 60;
 let trainState = "FULLSPEED";
 
 function update() {
@@ -16,18 +15,9 @@ function update() {
     let leftStationBound = middleScreen-(stationWidth*2);
     let rightStationBound = middleScreen+(stationWidth*2);
 
-    // orientation
-    if (trainLeftPos+trainWidth >= windowWidth+(trainWidth*3)) {
-        document.getElementById("train").style.transform = "scaleX(-1)";
-        trainOrientation = "left";
-    }
+    trainOrientation = setTrainOrientation(trainOrientation, trainWidth, windowWidth);
 
-    if (trainLeftPos <= -(trainWidth*1.5)) {
-        document.getElementById("train").style.transform = "scaleX(1)";
-        trainOrientation = "right";
-    }
-
-    // speed
+    // cap max speed to FULLSPEED
     if (trainState != "FREINAGE" && speed >= 16) {
         trainState = "FULLSPEED"
     }
@@ -35,13 +25,13 @@ function update() {
     // le train entre en gare par la gauche
     if (trainMedian > leftStationBound && trainMedian < middleScreen && trainOrientation == "right") {
         trainState = "FREINAGE";
-        trainTimer = trainTimerDuration;
+        trainTimer = 60;
     }
 
     // le train entre en gare par la droite
     if (trainMedian < rightStationBound && trainMedian > middleScreen && trainOrientation == "left") {
         trainState = "FREINAGE";
-        trainTimer = trainTimerDuration;
+        trainTimer = 60;
     }
 
     if (speed <= 0.1 && trainTimer > 0) {
@@ -72,25 +62,27 @@ function update() {
     }
 
     // final move
-    if (trainOrientation == "left") {
-        trainLeftPos = trainLeftPos-speed;
-    }
-
-    if (trainOrientation == "right") {
-        trainLeftPos = trainLeftPos+speed;
-    }
+    if (trainOrientation == "left") trainLeftPos = trainLeftPos-speed;
+    if (trainOrientation == "right") trainLeftPos = trainLeftPos+speed;
 
     document.getElementById("train").style.left = trainLeftPos+"px";
   }
-  
-  function draw() {
-  }
-  
+
+  function setTrainOrientation(initialTrainOrientation, trainWidth, windowWidth) {
+    if (trainLeftPos+trainWidth >= windowWidth+(trainWidth*3)) {
+        document.getElementById("train").style.transform = "scaleX(-1)";
+        return "left";
+    }
+
+    if (trainLeftPos <= -(trainWidth*1.5)) {
+        document.getElementById("train").style.transform = "scaleX(1)";
+        return "right";
+    }
+    return initialTrainOrientation;
+  };
+
   function loop(timestamp) {
-    var progress = timestamp - lastRender;
-  
-    update(progress);
-    draw();
+    update(timestamp - lastRender);
   
     lastRender = timestamp;
     window.requestAnimationFrame(loop);

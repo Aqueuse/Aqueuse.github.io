@@ -26,23 +26,36 @@ body {
     opacity: 80%;
 }
 
-.topnav a.active {
-    background-color: purple;
-}
-
-.aboutMeNav, .aboutMeBlock {
+.aboutMeNav, .aboutMeBlock, .aboutMeBlock a {
     background-color: #612666;
     color: #fff;
 }
 
-.mesProjetsNav, .mesProjetsBlock {
-    background-color: #A1A6B4;
+.mesProjetsNav, .mesProjetsBlock ,.mesProjetsBlock a {
+    background-color: #9FC2CC;
     color: #000;
 }
 
-.chroniqueNav, .chroniqueBlock {
-    background-color: #94C5CC;
+.chroniqueNav, .chroniqueBlock, .chroniqueBlock a {
+    background-color: #F1ECCE;
     color: #000;
+}
+
+.block {
+    position: absolute;
+    top: 50px;
+}
+
+.left {
+    margin-left: 2%;
+}
+
+.middle {
+    margin-left: 33%;
+}
+
+.right {
+    margin-left: 66%;
 }
 
 .ascii-train-animation {
@@ -71,20 +84,6 @@ body {
     bottom: 0px;
 }
 
-.ascii-train-white {
-    position: absolute;
-    bottom: 0px;
-     zoom: 8%;
-     font-family: Courier;
-     color: white;
-     font-size:8pt;
-     font-weight: bold;
-}
-
-.ascii-station-white {
-    position: absolute;
-    color: white;
-    zoom: 7%;
-    left: 47%;
-    bottom: 0px;
+.whiteText {
+    color: #fff;
 }
