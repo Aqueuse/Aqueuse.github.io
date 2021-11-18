@@ -56,6 +56,7 @@ body {
 
 .right {
     margin-left: 66%;
+    padding-right: 4px;
 }
 
 .ascii-train-animation {
