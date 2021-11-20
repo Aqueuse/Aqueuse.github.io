@@ -8,39 +8,61 @@
 
 <body onload="show('aboutMe')">
 <div class="topnav">
-  <a class="aboutMeNav" onclick="show('aboutMe')">Qui suis je ?</a>
-  <a class="mesProjetsNav" onclick="show('mesProjets')">Mes projets</a>
-  <a class="chroniqueNav" onclick="show('chronique')">Chronique</a>
+    <a class="aboutMeNav" onclick="show('aboutMe')">Qui suis je ?</a>
+    <a class="mesProjetsNav" onclick="show('mesProjets')">Mes projets</a>
+    <a class="chroniqueNav" onclick="show('chronique')">Chronique</a>
 </div>
 
-<div id="block" class="block left">
-  <div id="aboutMe" class="aboutMeBlock" style="display: block;">
-    <h1>Bienvenue dans ma tanière</h1>
-    <p>Je m'appelle Laura Bécognée et je suis une geekette/Hackeuse/bidouilleuse.</p>
-    <p>Je fabrique des trucs, je dev des trucs, je teste des trucs. Allez voir <a style="text-decoration: underline; cursor: pointer;" onclick="show('mesProjets')">mes projets</a> si ça vous intéresse.</p>
-    <p><a href="https://aqueuse.github.io/CV/">Mon CV</a></p>
-    <p><a href="https://github.com/Aqueuse">Mon code sur Github</a></p>
-    <p><a href="https://www.twitch.tv/aqueuse">Ma chaine Twitch</a></p>
-    <p><a>Vous pouvez me contacter à <i>jaimaille at gmail point com</i> si vous avez des questions.</a></p>
-  </div>
+<div id="block" class="block">
+    <div id="aboutMe" class="aboutMeBlock" style="display: block;">
+        <h1>Bienvenue dans ma tanière</h1>
+        <p>Je m'appelle Laura Bécognée et je suis une geekette/Hackeuse/bidouilleuse.</p>
+        <p>Je fabrique des trucs, je dev des trucs, je teste des trucs. Allez voir <a
+                style="text-decoration: underline; cursor: pointer;" onclick="show('mesProjets')">mes projets</a> si ça
+            vous intéresse.</p>
+        <p><a href="https://aqueuse.github.io/CV/">Mon CV</a></p>
+        <p><a href="https://github.com/Aqueuse">Mon code sur Github</a></p>
+        <p><a href="https://www.twitch.tv/aqueuse">Ma chaine Twitch</a></p>
+        <p><a>Vous pouvez me contacter à <i>jaimaille at gmail point com</i> si vous avez des questions.</a></p>
+    </div>
 
-  <div id="mesProjets" class="mesProjetsBlock" style="display: none;">
-    <h1>Mes projets</h1>
-    <p>Ours-Agile, mon robot nounours</p>
-    <p>Poseidon majordome, a workshop to learn and love datascience</p>
-    <p>Multipass, a social network multi sharing website</p>    
-  </div>
+    <div id="mesProjets" class="mesProjetsBlock" style="display: none;">
+        <h1>Mes projets</h1>
+        <div class="projet-block">
+            <img class="projet-image" src="images/ours.png">
+            <div class="projet-description">
+                <h3>Ours-Agile</h3>
+                <p>Un robot nounours semi autonome et semi intelligent, plus qu'un jouet mais pas beaucoup plus ;)</p>
+                <p>Je le développe avec l'impression 3D, des raspberry Pi micro et un Raspberry Pi3.</p>
+            </div>
+        </div>
+        <div class="projet-block">
+            <img class="projet-image" src="images/poseidon.png">
+            <div class="projet-description">
+                <h3>Poseidon majordome</h3>
+                <p>A workshop to learn and love datascience</p>
+            </div>
+        </div>
+        <div class="projet-block">
+            <img class="projet-image" src="images/multipass.ico">
+            <div class="projet-description">
+                <h3>Multipass</h3>
+                <p>A social network multi sharing website</p>
+            </div>
+        </div>
+    </div>
 
-  <div id="chronique" class="chroniqueBlock" style="display: none;">
-    <h1>Les Chroniques d'Aqueuse</h1>
-    <p>Les choses reprennent très doucement leur cours après une très grosse coupure d'internet (trois semaines quasiment). J'en aurai au moins profité pour optimiser l'organisation de la maison
-      et notamment du coin craft.
-    </p>
-  </div>
+    <div id="chronique" class="chroniqueBlock" style="display: none;">
+        <h1>Les Chroniques d'Aqueuse</h1>
+        <p>Les choses reprennent très doucement leur cours après une très grosse coupure d'internet (trois semaines
+            quasiment). J'en aurai au moins profité pour optimiser l'organisation de la maison
+            et notamment du coin craft.
+        </p>
+    </div>
 </div>
 
 <div class="ascii-train-animation">
-<div class='ascii-train' id="train" style="left:0px">
+    <div class='ascii-train' id="train" style="left:0;">
 <pre>          
                                                                                                                                                                                                                                                                                                                                                                                                             'xNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWXd'                                                                                                                                                                
                                                                                                                                                                                                                                                                                                                                                                                                            oNWWNNXK0000KXXNNNNXK0000KXNNNNNXK0000KXNNWWNo                                                                          ...................                                ,;;:;.                            
@@ -67,9 +89,9 @@
  .c;      ;c      'o.     .l;      :l.     ,o'     .o;     .lc.     ,o.     .l'      ::      ,o.     .o;     .cc.     ;o.     .o,      c:      ,l.     .o,     .cl.     ;o.     'o,     .l:      ;l.    cl......ld'.....:x,.....'x:......cl......,d'......o:......cl......:x,.....,dc......ol......;d'.....,x;......lc......;o......,d;......oo......cd,.....;x:......dc......:o......'d,......lc.....:o;..,:::o:.....'lc;::'..:l,.....,do:;...'cc...';:dd,.....;o:....'ckx,.....co,...';oOc.....'xx:'....;l'....'lOl'....'c:......:o,..,ccd0l.....'oc..,cclkd,.....;o,...;clkc....':kO;'....;o;.....,lc.....'cl,.....:o
                                                                                                                                                                                                                                                                                                                                                                                                       .,.     .,.      '.      .'       '.      ..      .,      .,.      '.      .'      .,.      ..      .'      .'       '.      .'      .,.      ,.      .'      .,.      '.      ..      .,.      '.      .'      .,
 </pre>
-</div>
+    </div>
 
-<div class='ascii-station' id="station"><pre>
+    <div class='ascii-station' id="station"><pre>
                                                                                            ...',,;;;;;;,,'...                                                                                           
                                                                                      .',;:cllllllllllllllllllc:;,..                                                                                     
                                                                                 ..,:clllllloooooooooooooooooollllllc:,..                                                                                
@@ -149,46 +171,43 @@ cKKKKKKKKKKKKKKKKOOOxOKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
  .......;lloooooooolc:;:;,',;;,';;;;;;;;;;;;;;;;;;:loooooooooooolc;;;;;;;;;;lxxkkkkkkkkkkkkkkkkkkkxxxxkkkkkkkkkkkkkkkkkkkxxc;;;;;;;;;;lloooooooooooll;;;;;;;;;;;;;;;;;;;;;;;;;;;clooooooooooool,........
 ........................................................................................................................................................................................................
 </pre>
-</div>
+    </div>
 </div>
 
 <script>
-function show(id) {
-  document.getElementById(id).style = "display:block";
-  switch (id) {
-    case "aboutMe":
-      document.body.bgColor = "#612666";
-      document.getElementById("train").classList.add("whiteText");
-      document.getElementById("station").classList.add("whiteText");
-      document.getElementById('block').classList.value = "block left";
-      document.getElementById('chronique').style = "display:none";
-      document.getElementById('mesProjets').style = "display:none";
-      break;
-    case "mesProjets":
-      document.body.bgColor = "#9FC2CC";
-      document.getElementById("train").classList.remove("whiteText");
-      document.getElementById("station").classList.remove("whiteText");
-      document.getElementById('block').classList.value = "block middle";
-      document.getElementById('chronique').style = "display:none";
-      document.getElementById('aboutMe').style = "display:none";
-      break;
-    case "chronique":
-      document.body.bgColor = "#F1ECCE";
-      document.getElementById("train").classList.remove("whiteText");
-      document.getElementById("station").classList.remove("whiteText");
-      document.getElementById('block').classList.value = "block right";
-      document.getElementById('aboutMe').style = "display:none";
-      document.getElementById('mesProjets').style = "display:none";
-      break;
-    default:
-      document.body.bgColor = "#612666";
-      document.getElementById("train").className = "ascii-train";
-      document.getElementById("station").className = "ascii-station";
-      document.getElementById('chronique').style = "display:none";
-      document.getElementById('mesProjets').style = "display:none";
-      break;
-  }
-}
+    function show(id) {
+        document.getElementById(id).style = "display:block";
+        switch (id) {
+            case "aboutMe":
+                document.body.bgColor = "#612666";
+                document.getElementById("train").classList.add("whiteText");
+                document.getElementById("station").classList.add("whiteText");
+                document.getElementById('chronique').style = "display:none";
+                document.getElementById('mesProjets').style = "display:none";
+                break;
+            case "mesProjets":
+                document.body.bgColor = "#9FC2CC";
+                document.getElementById("train").classList.remove("whiteText");
+                document.getElementById("station").classList.remove("whiteText");
+                document.getElementById('chronique').style = "display:none";
+                document.getElementById('aboutMe').style = "display:none";
+                break;
+            case "chronique":
+                document.body.bgColor = "#F1ECCE";
+                document.getElementById("train").classList.remove("whiteText");
+                document.getElementById("station").classList.remove("whiteText");
+                document.getElementById('aboutMe').style = "display:none";
+                document.getElementById('mesProjets').style = "display:none";
+                break;
+            default:
+                document.body.bgColor = "#612666";
+                document.getElementById("train").className = "ascii-train";
+                document.getElementById("station").className = "ascii-station";
+                document.getElementById('chronique').style = "display:none";
+                document.getElementById('mesProjets').style = "display:none";
+                break;
+        }
+    }
 </script>
 
 <script src="train.js"></script>

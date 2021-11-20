@@ -42,36 +42,41 @@ body {
 }
 
 .block {
-    position: absolute;
-    top: 50px;
+    height: 85vh;
+    box-sizing: border-box;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
-.left {
-    margin-left: 2%;
+.projet-block {
+    display: flex;
+    flex-direction: row;
 }
 
-.middle {
-    margin-left: 33%;
+.projet-image {
+    height: 12vh;
+    width: auto;
 }
 
-.right {
-    margin-left: 66%;
-    padding-right: 4px;
+.projet-description {
+    padding: 3vw;
 }
+
 
 .ascii-train-animation {
-    position: absolute;
-    width: 98%;
-    height: 20%;
-    bottom: 5px;
+    position: fixed;
+    width: 100vw;
+    height: 20vh;
+    bottom: 1vh;
     overflow-x: hidden;
 }
 
 .ascii-train {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
      zoom: 8%;
-     font-family: Courier;
+    font-family: Courier, serif;
      color: black;
      font-size:8pt;
      font-weight: bold;
@@ -82,9 +87,19 @@ body {
     color: black;
     zoom: 7%;
     left: 47%;
-    bottom: 0px;
+    bottom: 0;
 }
 
 .whiteText {
     color: #fff;
+}
+
+/* Responsive layout - small screen */
+@media screen and (max-width: 900px) {
+    /* TODO */
+}
+
+/* Responsive layout - very small screen */
+@media screen and (max-width: 600px) {
+    /* TODO */
 }
