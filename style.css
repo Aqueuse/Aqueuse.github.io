@@ -52,17 +52,18 @@ body {
 .projet-block {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 3vh;
 }
 
 .projet-image {
-    height: 12vh;
+    height: 18vh;
     width: auto;
 }
 
 .projet-description {
-    padding: 3vw;
+    padding-left: 3vw;
 }
-
 
 .ascii-train-animation {
     position: fixed;
