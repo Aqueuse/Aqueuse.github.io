@@ -84,6 +84,12 @@ p, .projet-block {
     bottom: 0;
 }
 
+@-moz-document url-prefix() {
+  .ascii-train {
+    -moz-transform: scale(7%);
+  }
+}
+
 .whiteText {
     color: #fff;
 }
