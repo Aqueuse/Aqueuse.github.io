@@ -1,29 +1,15 @@
 body {
+    overflow-x: hidden;
     font: 1em sans-serif;
+    margin : 0;
 }
 
-.topnav {
-    position: absolute;
-    top :0px;
-    left: 0px;
-    width: 100%;
-    background-color: whitesmoke;
-    overflow: hidden;
-}
-
-.topnav a {
-    float: left;
+h1 {
     text-align: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    text-decoration: none;
-    font-size: 17px;
-    width: 33.33%;
-    opacity: 100%;
 }
 
-.topnav a:hover {
-    opacity: 80%;
+p, .projet-block {
+    padding-left: 1vw;
 }
 
 .aboutMeNav, .aboutMeBlock, .aboutMeBlock a {
@@ -32,28 +18,31 @@ body {
 }
 
 .mesProjetsNav, .mesProjetsBlock ,.mesProjetsBlock a {
-    background-color: #9FC2CC;
+    background-color: #9F86C0;
     color: #000;
 }
 
 .chroniqueNav, .chroniqueBlock, .chroniqueBlock a {
-    background-color: #F1ECCE;
+    background-color: #F7EDF0;
     color: #000;
 }
 
 .block {
-    height: 85vh;
+    height: 100vh;
+    width: 100vw;
     box-sizing: border-box;
-    padding-top: 5vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    float: left;
+}
+
+.block > div {
+    float: left;
+    width: 100%;
 }
 
 .projet-block {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding-bottom: 3vh;
 }
 
 .projet-image {
@@ -65,11 +54,15 @@ body {
     padding-left: 3vw;
 }
 
+.projet-description > p {
+    padding-left: 0;
+}
+
 .ascii-train-animation {
-    position: fixed;
+    position: relative;
     width: 100vw;
-    height: 20vh;
-    bottom: 1vh;
+    height: 12vh;
+    top: 0;
     overflow-x: hidden;
 }
 
@@ -78,14 +71,14 @@ body {
     bottom: 0;
      zoom: 8%;
     font-family: Courier, serif;
-     color: black;
+     color: white;
      font-size:8pt;
      font-weight: bold;
 }
 
 .ascii-station {
     position: absolute;
-    color: black;
+    color: white;
     zoom: 7%;
     left: 47%;
     bottom: 0;
