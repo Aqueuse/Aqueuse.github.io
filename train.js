@@ -4,6 +4,8 @@ let speed = 16;
 let trainTimer = 60;
 let trainState = "FULLSPEED";
 
+let isFirefoxBrowser = navigator.userAgent.indexOf("Firefox") > -1;
+
 function update() {
     let windowWidth = window.innerWidth*8;
     let middleScreen = windowWidth/2;
@@ -73,7 +75,6 @@ function update() {
         document.getElementById("train").style.transform = "scaleX(-1)";
         return "left";
     }
-
     if (trainLeftPos <= -(trainWidth*1.5)) {
         document.getElementById("train").style.transform = "scaleX(1)";
         return "right";
@@ -88,5 +89,8 @@ function update() {
     window.requestAnimationFrame(loop);
   }
 
-  var lastRender = 0;
-  window.requestAnimationFrame(loop);
+var lastRender = 0;
+if (isFirefoxBrowser) {
+    document.getElementsByClassName("ascii-train-animation")[0].style.display = "none";
+}
+else window.requestAnimationFrame(loop);
