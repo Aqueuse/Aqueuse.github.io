@@ -12,6 +12,10 @@ p, .projet-block {
     padding-left: 1vw;
 }
 
+.menu {
+    display:flex;
+}
+
 .aboutMeNav, .aboutMeBlock, .aboutMeBlock a {
     background-color: #612666;
     color: #fff;
