@@ -16,6 +16,10 @@ p, .projet-block {
     display:flex;
 }
 
+.elementMenu {
+    stroke: 1px solid white;
+}
+
 .aboutMeNav, .aboutMeBlock, .aboutMeBlock a {
     background-color: #612666;
     color: #fff;
