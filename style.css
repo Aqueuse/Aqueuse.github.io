@@ -78,6 +78,8 @@ p, .projet-block {
     position: absolute;
     bottom: 0;
      zoom: 8%;
+     -moz-transform: scale(.084);
+     -moz-transform-origin: 0 bottom;
     font-family: Courier, serif;
      color: white;
      font-size:8pt;
@@ -88,8 +90,21 @@ p, .projet-block {
     position: absolute;
     color: white;
     zoom: 7%;
+    -moz-transform: scale(.0612);
+    -moz-transform-origin: 0 bottom;
     left: 47%;
     bottom: 0;
+}
+
+.train--right {
+  -webkit-transform: rotateY(180deg);
+}
+
+/* hack firefox */
+@-moz-document url-prefix() {
+  .train--right {
+    -webkit-transform: scale(.084) rotateY(180deg);
+  }
 }
 
 .whiteText {
