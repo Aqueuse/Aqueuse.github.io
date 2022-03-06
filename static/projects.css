@@ -2,18 +2,21 @@
     grid-area: oursagile;
     border: 1px solid slategray;
     padding: 3em;
+    border-radius: 5%;
 }
 
 .nekoProject {
     grid-area: neko;
     border: 1px solid slategray;
     padding: 3em;
+    border-radius: 5%;
 }
 
 .poseidonProject {
     grid-area: poseidon;
     border: 1px solid slategray;
     padding: 3em;
+    border-radius: 5%;
 }
 
 .twitchdevProject {
@@ -43,6 +46,8 @@
     "twitchdev  skyabove cloudwords";
     background-color: #fff;
     color: #444;
+    border-radius: 100%;
+    font-family: monospace;
 }
 
 .projectsContainerGrid a {

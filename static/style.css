@@ -3,6 +3,7 @@
     src: url("/fonts/font-Roboto/Roboto-Regular.ttf");
     format("ttf");
 }
+
 * {
     box-sizing: border-box;
 }
@@ -16,6 +17,10 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+.photo {
+    border-radius: 150%;
 }
 
 .projectLink {
