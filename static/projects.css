@@ -1,0 +1,61 @@
+.oursagileProject {
+    grid-area: oursagile;
+    border: 1px solid slategray;
+    padding: 1em;
+}
+
+.nekoProject {
+    grid-area: neko;
+    border: 1px solid slategray;
+    padding: 1em;
+}
+
+.poseidonProject {
+    grid-area: poseidon;
+    border: 1px solid slategray;
+    padding: 1em;
+}
+
+.twitchdevProject {
+    grid-area: twitchdev;
+    border: 1px solid slategray;
+    padding: 1em;
+}
+
+.skyaboveProject {
+    grid-area: skyabove;
+    border: 1px solid slategray;
+    padding: 1em;
+}
+
+.cloudwordsProject {
+    grid-area: cloudwords;
+    border: 1px solid slategray;
+}
+
+.projectsContainerGrid {
+    padding: 2%;
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr; /* fr=fraction */
+    grid-template-areas:
+    "oursagile  neko     poseidon"
+    "twitchdev  skyabove cloudwords";
+    background-color: #fff;
+    color: #444;
+}
+
+.projectsContainerGrid a {
+    color: #000249;
+}
+
+.logoImg {
+    display: block;
+    margin: 1em auto 0;
+    height: 14%;
+    width: auto;
+}
+
+h2 {
+    text-align: center;
+}

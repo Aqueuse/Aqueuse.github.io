@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="twitch.svg"
+   version="1.1"
+   id="Flat"
+   viewBox="0 0 256 256"
+   height="256px"
+   width="256px">
+  <metadata
+     id="metadata2729">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2727" />
+  <sodipodi:namedview
+     inkscape:current-layer="Flat"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="128"
+     inkscape:cx="128"
+     inkscape:zoom="2.8710938"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     id="namedview2725"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.693087"
+     id="path2722"
+     d="M 187.24718,57.77415 H 77.460317 A 10.991263,11.214042 0 0 0 66.481632,68.975359 V 169.78624 a 10.991263,11.214042 0 0 0 10.978685,11.20121 h 10.978686 v 22.40242 a 5.4889926,5.6002476 0 0 0 9.003265,4.30232 l 31.409602,-26.70474 h 28.96109 a 10.999497,11.222442 0 0 0 7.02853,-2.59658 l 29.43385,-25.02498 a 10.949866,11.171806 0 0 0 3.95052,-8.60526 V 68.975359 A 10.991263,11.214042 0 0 0 187.24718,57.77415 Z m -54.89344,72.80786 a 5.4893426,5.6006046 0 0 1 -10.97868,0 V 96.978382 a 5.4893426,5.6006046 0 0 1 10.97868,0 z m 32.93606,0 a 5.4893426,5.6006046 0 0 1 -10.97868,0 V 96.978382 a 5.4893426,5.6006046 0 0 1 10.97868,0 z" />
+  <rect
+     y="13.572098"
+     x="14.268698"
+     height="229.2041"
+     width="228.15921"
+     id="rect3292"
+     style="fill:none;stroke:#ffffff;stroke-width:28.8302;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
+</svg>
