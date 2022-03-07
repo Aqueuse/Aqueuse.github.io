@@ -116,7 +116,7 @@ h1 {
 .contactContainer {
     display: flex;
     padding: 4em;
-    justify-content: center;
+    justify-content: space-around;
     gap: 2em;
 }
 
