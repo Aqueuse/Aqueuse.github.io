@@ -107,7 +107,8 @@ h1 {
 .contactContainer {
     display: flex;
     padding: 4em;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2em;
 }
 
 .contactLogo {
