@@ -105,7 +105,8 @@ h1 {
     padding: 4em 20em 4em 20em;
 }
 
-.presentationContainer p {
+.presentationContainer p a {
+    color: white;
     text-align: justify;
 }
 
