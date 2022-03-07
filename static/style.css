@@ -16,7 +16,6 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .projectLink {
@@ -25,7 +24,6 @@ body {
 
 .block {
     padding-top: 1em;
-    width: 100vw;
 }
 
 .bluebg {
