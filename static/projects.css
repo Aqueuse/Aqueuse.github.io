@@ -1,7 +1,6 @@
 .oursagileProject, .nekoProject, .poseidonProject, .twitchdevProject, .skyaboveProject, .cloudwordsProject {
-    border: 1px solid slategray;
+    border: 4px double slategray;
     padding: 3em;
-    border-radius: 1em;
 }
 
 .oursagileProject {

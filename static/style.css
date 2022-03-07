@@ -1,18 +1,19 @@
-@font-face {
-    font-family: "Roboto Light";
-    src: url("/fonts/font-Roboto/Roboto-Regular.ttf");
-    format("ttf");
-}
+/*@font-face {*/
+/*    font-family: "Prompt";*/
+/*    src: url("/static/fonts/Prompt/");*/
+/*    format("ttf");*/
+/*}*/
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
+    font-family: "DejaVu Serif", serif;
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
