@@ -104,6 +104,10 @@ h1 {
     padding: 4em 10em 4em 10em;
 }
 
+.photo {
+    border-radius: 10em;
+}
+
 .contactContainer {
     display: flex;
     padding: 4em;
