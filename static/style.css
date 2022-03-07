@@ -43,7 +43,8 @@ body {
     display: flex;
     color: white;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2em;
     align-items: center;
 }
 
