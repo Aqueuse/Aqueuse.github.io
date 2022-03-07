@@ -120,6 +120,10 @@ h1 {
     gap: 2em;
 }
 
+.contactContainer h1 {
+    padding-top: 2em;
+}
+
 .contactLogo {
     height: 30vh;
     aspect-ratio: 1;
