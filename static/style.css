@@ -101,8 +101,12 @@ h1 {
 .presentationContainer {
     display: flex;
     align-items: center;
-    gap:4em;
+    gap:10em;
     padding: 4em 20em 4em 20em;
+}
+
+.presentationContainer p {
+    text-align: justify;
 }
 
 .photo {
