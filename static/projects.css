@@ -3,6 +3,10 @@
     padding: 3em;
 }
 
+.oursagileProject, .nekoProject, .poseidonProject, .twitchdevProject, .skyaboveProject, .cloudwordsProject : hover {
+    cursor: pointer;
+}
+
 .oursagileProject {
     grid-area: oursagile;
 }
