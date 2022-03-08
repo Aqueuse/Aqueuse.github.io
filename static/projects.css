@@ -3,7 +3,7 @@
     padding: 3em;
 }
 
-.oursagileProject, .nekoProject, .poseidonProject, .twitchdevProject, .skyaboveProject, .cloudwordsProject : hover {
+.oursagileProject:hover, .nekoProject:hover, .poseidonProject:hover, .twitchdevProject:hover, .skyaboveProject:hover, .cloudwordsProject:hover {
     cursor: pointer;
 }
 
