@@ -10,9 +10,9 @@
 </head>
 
 <body>
-<div class="block bluebg">
+<div class="block bluebg" id="top">
     <div class="navbar">
-        <span class=projectsNav><a href="#projets">#Projets</a></span>
+        <span class=projectsNav><a href="#realisations">#Réalisations</a></span>
         <span><a href="#apropos">#À_Propos</a></span>
         <span><a href="/ressources/cv_dev_java_1page.pdf">#CV</a></span>
         <span><a href="#contact">#Contact</a></span>
@@ -140,7 +140,30 @@
         </div>
     </div>
 </div>
-<div class="block whitebg" id="projets">
+<div class="block whitebg">
+    <p class="bienvenueParagraph">Bienvenue !<br>
+    Ce site internet a<br>
+    pour vocation de décrire<br>
+    mon travail et mes passions
+    </p>
+</div>
+<div class="block bluebg" id="apropos">
+    <a class="topButton" title="top" href=#top>↑top</a>
+    <h2 class="presentationTitle">Qui suis je ?</h2>
+    <div class="presentationContainer">
+        <p>
+            Je m'appelle Laura Bécognée et je suis une geekette / Hackeuse / bidouilleuse depuis toujours. Je craft, que ce soit du matériel (robotique, textile, menuiserie, outils, chaussures un jour)  ou du
+            logiciel (applications desktop, web, jeu vidéo).
+            <br><br>
+            J'aime aussi écrire et j'ai rédigé beaucoup d'articles techniques pour les éditions diamond et deux romans fantastiques.
+            <br><br>
+            N'hésitez pas à me <a href="#contact">contacter</a> si vous avez des projets.</p>
+        <img class="photo" src="static/images/photo.png" alt="photo">
+    </div>
+</div>
+<div class="block whitebg" id="realisations">
+    <a class="topButton" title="top" href=#top>↑top</a>
+    <h1 class="realisationsTitle">Mes réalisations</h1>
     <div class="projectsContainerGrid">
         <div class="oursagileProject" onclick="window.open('https://github.com/Aqueuse/ours-agile-unity', '_self')">
             <img class="logoImg" src="static/images/ours.png" alt="oursAgile">
@@ -149,11 +172,11 @@
             <p>Je le développe avec l'impression 3D, des raspberry Pi micro et un Raspberry Pi3.</p>
             <p>[<a href="https://github.com/Aqueuse/ours-agile-unity">En savoir plus</a>]</p>
         </div>
-    
+
         <div class="nekoProject" onclick="window.open('https://ours-agile.com/projets/neko/neko.html', '_self')">
             <img class="logoImg" src=static/images/neko.png alt="neko">
             <h2>Neko</h2>
-            <p>A chaton pour votre bureau, écrit en Java Swing</p>
+            <p>Un chaton pour votre bureau, écrit en Java Swing</p>
             <p>Peut chasser les curseurs, les pointeurs rouges, les jouets ou vivre sa vie.</p>
             <p>Il est aussi possible de le personnaliser en ajoutant ses propres assets</p>
             <p>[ <a href="https://ours-agile.com/projets/neko/neko.html">La page de Neko</a> | <a href="https://github.com/Aqueuse/NekoV2">Code source</a> ]</p>
@@ -169,7 +192,7 @@
         </div>
         <div class=skyaboveProject onclick="window.open('https://github.com/Aqueuse/Sky-Above-Prototype/tree/unity', '_self')">
             <img class="logoImg" src=static/images/skyAbove.svg alt=dirigeable>
-            <h2>skyAbove</h2>
+            <h2>Sky Above</h2>
             <p>Mon jeu video en cours de developpement, quelque part entre terraria et lemmings</p>
             <p>Developpé avec Unity en C#</p>
             <p>[<a href="https://github.com/Aqueuse/Sky-Above-Prototype/tree/unity">En savoir plus</a>]</p>
@@ -178,20 +201,68 @@
         <div class=twitchdevProject></div>
     </div>
 </div>
-<div class="block bluebg" id="apropos">
-    <div class="presentationContainer">
-        <p>
-            Je m'appelle Laura Bécognée et je suis une geekette / Hackeuse / bidouilleuse depuis toujours. Je craft, que ce soit du matériel (robotique, textile, menuiserie, outils, chaussures un jour)  ou du
-            logiciel (applications desktop, web, jeu vidéo).
-            <br><br>
-            J'aime aussi écrire et j'ai rédigé beaucoup d'articles techniques pour les éditions diamond et deux romans fantastiques.
-            <br><br>
-            N'hésitez pas à me <a href="#contact">contacter</a> si vous avez des projets.</p>
-        <img class="photo" src="static/images/photo.png" alt="photo">
+<div class="block bluebg" id="methodologie">
+    <a class="topButton" title="top" href=#top>↑top</a>
+    <h2>Ma méthode de travail</h2>
+    <div class="travailFlex">
+        <img class=travailImage style="background-color: transparent" src=static/images/Tableau_blanc.svg alt=tableau-blanc>
+        <div class="travailFlexLeft">
+            <h3>écoute</h3>
+            <p>Quelque soit votre projet,
+                je commencerai toujours
+                par vous aider à le décrire
+                et à la préciser afin que
+                nous avancions main dans
+                la main vers votre objectif.
+                Poser un cahier des charges
+                clair et précis entre nous
+                est une étape indispensable
+                pour aider un projet à
+                avancer avec efficacité.
+            </p>
+        </div>
+        <img class=travailImage src=static/images/bublelight.svg alt=ampoule>
+        <div class="travailFlexMiddle">
+            <h3>créativité</h3>
+            <p>
+                Forte d'une dizaine d'année
+                d'expérience dans des
+                domaines variés et
+                complémentaires, je saurai
+                rebondir pour vous aider
+                à trouver la solution et la
+                plus adapté et performante,
+                même si elle est originale
+                et non conformiste. En effet,
+                venant de la culture du
+                hack, je sais qu'il parfois
+                savoir innover pour progresser.
+            </p>
+        </div>
+        <img class=travailImage src=static/images/gear.svg alt=engrenages>
+        <div class="travailFlexRight">
+            <h3>adaptabilité</h3>
+            <p>
+                Votre projet évolue ?
+                Moi aussi. Je sais me
+                remettre en question
+                et ajouter des cordes
+                à mon arc pour combler
+                mes lacunes et dépasser
+                les objectifs initiaux.
+                Mieux encore, j'aime
+                les projets qui me posent
+                des défis technologiques
+                ou humains et obligent
+                à s'ouvrir à l'inconnu
+                et la nouveauté.
+            </p>
+        </div>
     </div>
 </div>
 <div class="block whitebg" id="contact">
-    <h1 class="contactTitle">Contact</h1>
+    <a class="topButton" title="top" href=#top>↑top</a>
+    <h2 class="contactTitle">Contact</h2>
     <div class="contactContainer">
         <form class="contactForm" action="/" method=post>
             <input type="email" placeholder="email"><br>

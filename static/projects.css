@@ -32,7 +32,7 @@
 }
 
 .projectsContainerGrid {
-    padding: 2%;
+    padding: 2% 2% 4% 2%;
     display: grid;
     grid-gap: 2%;
     grid-template-columns: 1fr 1fr 1fr; /* fr=fraction */
