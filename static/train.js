@@ -4,23 +4,23 @@ let speed = 16;
 let trainTimer = 60;
 let trainState = "FULLSPEED";
 
-let isFirefoxBrowser = navigator.userAgent.indexOf("Firefox") > -1;
-
 function update() {
-    let windowWidth = window.innerWidth*8;
+    let windowWidth = window.innerWidth;
     let middleScreen = windowWidth/2;
 
     let trainWidth = document.getElementById("train").offsetWidth;
     let trainMedian = trainLeftPos-(trainWidth/2);
 
-    let stationWidth = document.getElementById("station").offsetWidth/8;
+    let stationWidth = document.getElementById("station").offsetWidth/2;
     let leftStationBound = middleScreen-(stationWidth*2);
     let rightStationBound = middleScreen+(stationWidth*2);
+
+    let fullSpeed = 8;
 
     trainOrientation = setTrainOrientation(trainOrientation, trainWidth, windowWidth);
 
     // cap max speed to FULLSPEED
-    if (trainState !== "FREINAGE" && speed >= 16) {
+    if (trainState !== "FREINAGE" && speed >= fullSpeed) {
         trainState = "FULLSPEED"
     }
 
@@ -46,7 +46,7 @@ function update() {
 
     switch(trainState) {
         case "FULLSPEED":
-            speed = 16;
+            speed = fullSpeed;
             break;
         case "STOP":
             speed = 0;
@@ -59,7 +59,7 @@ function update() {
             speed = speed+0.2;
             break;
         default:
-            speed = 16;
+            speed = fullSpeed;
             break;
     }
 
@@ -71,11 +71,11 @@ function update() {
 }
 
 function setTrainOrientation(initialTrainOrientation, trainWidth, windowWidth) {
-    if (trainLeftPos+trainWidth >= windowWidth+(trainWidth*3)) {
+    if (trainLeftPos+trainWidth >= windowWidth+(trainWidth)) {
         document.getElementById("train").style.transform = "scaleX(-1)";
         return "left";
     }
-    if (trainLeftPos <= -(trainWidth*1.5)) {
+    if (trainLeftPos <= -(trainWidth)) {
         document.getElementById("train").style.transform = "scaleX(1)";
         return "right";
     }
@@ -90,7 +90,4 @@ function loop(timestamp) {
 }
 
 var lastRender = 0;
-if (isFirefoxBrowser) {
-    document.getElementsByClassName("ascii-train-animation")[0].style.display = "none";
-}
-else window.requestAnimationFrame(loop);
+window.requestAnimationFrame(loop);
