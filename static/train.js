@@ -1,6 +1,6 @@
-let trainLeftPos = 4000;
+let trainLeftPos = 1000;
 let trainOrientation = "right";
-let speed = 16;
+let speed = 0.05;
 let trainTimer = 60;
 let trainState = "FULLSPEED";
 
@@ -11,11 +11,11 @@ function update() {
     let trainWidth = document.getElementById("train").offsetWidth;
     let trainMedian = trainLeftPos-(trainWidth/2);
 
-    let stationWidth = document.getElementById("station").offsetWidth/2;
-    let leftStationBound = middleScreen-(stationWidth*2);
-    let rightStationBound = middleScreen+(stationWidth*2);
+    let stationWidth = document.getElementById("station").offsetWidth;
+    let leftStationBound = middleScreen-(stationWidth);
+    let rightStationBound = middleScreen+(stationWidth);
 
-    let fullSpeed = 8;
+    let fullSpeed = 6;
 
     trainOrientation = setTrainOrientation(trainOrientation, trainWidth, windowWidth);
 
@@ -36,7 +36,7 @@ function update() {
         trainTimer = 60;
     }
 
-    if (speed <= 0.1 && trainTimer > 0) {
+    if (speed <= 0.01 && trainTimer > 0) {
         trainState = "STOP";
     }
 
@@ -53,10 +53,10 @@ function update() {
             trainTimer = trainTimer-1;
             break;
         case "FREINAGE":
-            speed = speed-0.2;
+            speed = speed-0.05;
             break;
         case "ACCELERATION":
-            speed = speed+0.2;
+            speed = speed+0.05;
             break;
         default:
             speed = fullSpeed;

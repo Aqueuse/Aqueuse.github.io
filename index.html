@@ -5,9 +5,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ours-Agile</title>
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="static/loco.css">
-    <link rel="stylesheet" href="static/projects.css">
+    <link rel="stylesheet" media='screen and (min-width: 1280px)' href="static/css/desktop.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 1024px) and (max-width: 1279px)' href="static/css/laptop.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 768px) and (max-width: 1023px)' href="static/css/tablet.css"/>
+    <link rel="stylesheet" media='screen and (max-width: 767px)' href="static/css/phone.css"/>
 </head>
 
 <body>
@@ -23,15 +24,16 @@
         <h1><i>I'm Laura B</i></h1>
         <p class=firstBlockText>Backend Developer, specialized in Java.</p>
         <div class=logoContainer>
-            <a href="https://github.com/Aqueuse"><img src=static/images/github.svg class=logo alt="Github"></a>
-            <a href="https://www.linkedin.com/in/laura-b%C3%A9cogn%C3%A9e/"><img src=static/images/linkedin.svg class=logo alt="Linkedin"></a>
-            <a href="https://www.twitch.tv/aqueuse"><img src=static/images/twitch.svg class=logo alt="Twitch"></a>
-            <a href="https://twitter.com/TrilbyOFerrall"><img src=static/images/twitter.svg class=logo alt="Twitter"></a>
+            <a href="https://github.com/Aqueuse"><img src=static/images/socialNetworks/github.svg class=logo alt="Github"></a>
+            <a href="https://www.linkedin.com/in/laura-b%C3%A9cogn%C3%A9e/"><img src=static/images/socialNetworks/linkedin.svg class=logo alt="Linkedin"></a>
+            <a href="https://www.twitch.tv/aqueuse"><img src=static/images/socialNetworks/twitch.svg class=logo alt="Twitch"></a>
+            <a href="https://twitter.com/TrilbyOFerrall"><img src=static/images/socialNetworks/twitter.svg class=logo alt="Twitter"></a>
         </div>
     </div>
     <div class="ascii-train-animation">
-        <img id=train alt=loco class=ascii-train src=static/images/loco.svg width=30% height=30%>
-        <img id=station alt=station class=ascii-station src=static/images/station.svg width=6% height=6%>
+        <span style="background-color: red; width: 5px; position: absolute; left: 1113px; top: 500px;"></span>
+        <img id=train alt=loco class=ascii-train src=static/images/loco_super_cleaned.svg>
+        <img id=station alt=station class=ascii-station src=static/images/station_super_cleaned.svg>
     </div>
 </div>
 <div class="block whitebg">
@@ -46,12 +48,15 @@
     <h2 class="presentationTitle">Qui suis je ?</h2>
     <div class="presentationContainer">
         <p>
-            Je m'appelle Laura Bécognée et je suis une geekette / Hackeuse / bidouilleuse depuis toujours. Je craft, que ce soit du matériel (robotique, textile, menuiserie, outils, chaussures un jour)  ou du
-            logiciel (applications desktop, web, jeu vidéo).
+            Je m'appelle Laura Bécognée et je suis une geekette / Hackeuse / bidouilleuse depuis toujours. Je craft, que
+            ce soit du matériel (robotique, textile, menuiserie, outils, chaussures un jour)  ou du logiciel
+            (applications desktop, web, jeu vidéo).
             <br><br>
-            J'aime aussi écrire et j'ai rédigé beaucoup d'articles techniques pour les éditions diamond et deux romans fantastiques.
+            J'aime aussi écrire et j'ai rédigé beaucoup d'articles
+            techniques pour les éditions diamond et deux romans fantastiques.
             <br><br>
-            N'hésitez pas à me <a href="#contact">contacter</a> si vous avez des projets.</p>
+            N'hésitez pas à me <a href="#contact">contacter</a> si vous avez des projets.
+        </p>
         <img class="photo" src="static/images/photo.png" alt="photo">
     </div>
 </div>
@@ -60,7 +65,7 @@
     <h1 class="realisationsTitle">Mes réalisations</h1>
     <div class="projectsContainerGrid">
         <div class="oursagileProject" onclick="window.open('https://github.com/Aqueuse/ours-agile-unity', '_self')">
-            <img class="logoImg" src="static/images/ours.png" alt="oursAgile">
+            <img class="logoImg" src="static/images/projects/ours.png" alt="oursAgile">
             <h2>Ours Agile</h2>
             <p>Un robot nounours semi autonome et semi intelligent, plus qu'un jouet mais pas beaucoup plus ;)</p>
             <p>Je le développe avec l'impression 3D, des raspberry Pi micro et un Raspberry Pi3.</p>
@@ -68,16 +73,17 @@
         </div>
 
         <div class="nekoProject" onclick="window.open('https://ours-agile.com/projets/neko/neko.html', '_self')">
-            <img class="logoImg" src=static/images/neko.png alt="neko">
+            <img class="logoImg" src=static/images/projects/neko.png alt="neko">
             <h2>Neko</h2>
             <p>Un chaton pour votre bureau, écrit en Java Swing</p>
             <p>Peut chasser les curseurs, les pointeurs rouges, les jouets ou vivre sa vie.</p>
             <p>Il est aussi possible de le personnaliser en ajoutant ses propres assets</p>
-            <p>[ <a href="https://ours-agile.com/projets/neko/neko.html">La page de Neko</a> | <a href="https://github.com/Aqueuse/NekoV2">Code source</a> ]</p>
+            <p>[ <a href="https://ours-agile.com/projets/neko/neko.html">La page de Neko</a>
+                | <a href="https://github.com/Aqueuse/NekoV2">Code source</a> ]</p>
         </div>
 
         <div class="poseidonProject" onclick="window.open('https://github.com/Aqueuse/PoseidonMajordome', '_self')">
-            <img class="logoImg" src=static/images/poseidon.png alt="poseidon">
+            <img class="logoImg" src=static/images/projects/poseidon.png alt="poseidon">
             <h2>Poseidon majordome</h2>
             <p>Un atelier pour apprendre et aimer les datasciences.</p>
             <p>Développé en tant qu'application Desktop avec JavaFX et une future partie web en Spring</p>
@@ -85,7 +91,7 @@
             <p>[<a href="https://github.com/Aqueuse/PoseidonMajordome">En savoir plus</a>]</p>
         </div>
         <div class=skyaboveProject onclick="window.open('https://github.com/Aqueuse/Sky-Above-Prototype/tree/unity', '_self')">
-            <img class="logoImg" src=static/images/skyAbove.svg alt=dirigeable>
+            <img class="logoImg" src=static/images/projects/skyAbove.svg alt=dirigeable>
             <h2>Sky Above</h2>
             <p>Mon jeu video en cours de developpement, quelque part entre terraria et lemmings</p>
             <p>Developpé avec Unity en C#</p>
