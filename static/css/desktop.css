@@ -111,6 +111,7 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     font-size: xx-large;
     padding-top: 1.5em;
 }
@@ -169,10 +170,6 @@ h2 {
     background-color: white;
 }
 
-.travailFlex:nth-child(2n) {
-
-}
-
 .travailFlexLeft {
     padding-right: 3em;
 }
@@ -184,7 +181,6 @@ h2 {
 .travailFlexRight {
     padding-right: 3em;
 }
-
 
 .photo {
     border-radius: 10em;
@@ -224,6 +220,7 @@ h2 {
     color: skyblue;
 }
 
+/* PROJECTS  */
 
 .oursagileProject, .nekoProject, .poseidonProject, .twitchdevProject, .skyaboveProject, .cloudwordsProject {
     border: 4px double slategray;
@@ -279,8 +276,4 @@ h2 {
     margin: 1em auto 0;
     height: 14%;
     width: auto;
-}
-
-h2 {
-    text-align: center;
 }
