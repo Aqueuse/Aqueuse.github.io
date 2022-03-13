@@ -1,26 +1,18 @@
-function showHideNavBar() {
-    if (document.getElementById("navbar").style.width === "80vw") {
-        document.getElementById("navbar").style.width = "0vw";
+let isPhoneDisplay = window.matchMedia('(max-width: 767px)');
 
-        document.getElementById("navbar").childNodes.forEach(
-            e => {
-                if (e.nodeName === "SPAN") {
-                    e.style.display = "none";
-                }
-            }
-        )
+if (isPhoneDisplay) {
+    document.getElementById("navbar").style.zIndex = "-10";
+    document.getElementById("navbar").style.width = "80vw";
+}
+
+function showHideNavBar() {
+    if (document.getElementById("navbar").style.zIndex === "-10") {
+        document.getElementById("navbar").style.zIndex = "10";
+
         return;
     }
 
-    if (document.getElementById("navbar").style.width === "0vw") {
-        document.getElementById("navbar").style.width = "80vw";
-
-        document.getElementById("navbar").childNodes.forEach(
-            e => {
-                if (e.nodeName === "SPAN") {
-                    e.style.display = "block";
-                }
-            }
-        )
+    if (document.getElementById("navbar").style.zIndex === "10") {
+        document.getElementById("navbar").style.zIndex = "-10";
     }
 }

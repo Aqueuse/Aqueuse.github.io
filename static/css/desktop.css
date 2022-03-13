@@ -66,6 +66,7 @@ body {
 }
 
 .navbar {
+    width: 100vw;
     display: flex;
     color: white;
     flex-direction: row;

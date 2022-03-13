@@ -13,14 +13,18 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    line-height: 1.3em;
+}
+
 .blackText {
     color: black;
 }
 
 .topButton {
     float: right;
-    padding-right: 2em;
-    font-size: 1.5em;
+    padding-right: 0.2em;
+    font-size: 2.5em;
 }
 
 .projectLink {
@@ -44,19 +48,14 @@ body {
     color: white;
 }
 
-.burger {
-    display: block;
-    width: 4em;
-    padding-left: 1em;
-}
-
 .navbar {
+    width: 100vw;
     display: flex;
     color: white;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: 2em;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .navbar a {
@@ -82,7 +81,7 @@ body {
 }
 
 .firstBlockText {
-    padding: 0;
+    padding: 0 0 0 1em;
     margin: 0;
     font-size: 2em;
     text-align: center;
@@ -106,6 +105,11 @@ h1 {
 h2 {
     font-size: xx-large;
     padding-top: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
 }
 
 .logoContainer {
@@ -127,6 +131,7 @@ h2 {
 }
 
 .presentationTitle {
+    text-align: center;
     padding-top: 2em;
     font-size: xx-large;
 }
@@ -134,18 +139,19 @@ h2 {
 .presentationContainer {
     display: flex;
     align-items: center;
-    gap:10em;
-    padding: 1em 20em 6em 20em;
+    flex-direction: column-reverse;
+    gap:2em;
+    padding: 1em 7em 6em 7em;
 }
 
 .presentationContainer p a {
     color: white;
-    text-align: justify;
+    text-align: center;
 }
 
 .realisationsTitle {
     font-size: xx-large;
-    padding: 1.5em;
+    padding: 2.5em 1.5em 1.5em 1.5em;
 }
 
 .travailFlex {
@@ -156,28 +162,16 @@ h2 {
     align-items: center;
     gap: 1.5em;
 }
+
 .travailImage {
     height: 30vh;
     padding: 1.5em;
     background-color: white;
 }
 
-.travailFlex:nth-child(2n) {
-
+.travailFlexLeft, .travailFlexMiddle, .travailFlexRight {
+    padding: 3em;
 }
-
-.travailFlexLeft {
-    padding-right: 3em;
-}
-
-.travailFlexMiddle {
-    padding-right: 3em;
-}
-
-.travailFlexRight {
-    padding-right: 3em;
-}
-
 
 .photo {
     border-radius: 10em;
@@ -187,7 +181,7 @@ h2 {
     display: flex;
     padding: 4em;
     justify-content: space-around;
-    gap: 2em;
+    align-items: center;
 }
 
 .contactTitle {
@@ -195,7 +189,7 @@ h2 {
 }
 
 .contactLogo {
-    height: 30vh;
+    height: 18vh;
     aspect-ratio: 1;
 }
 
@@ -215,4 +209,52 @@ h2 {
 
 .footer a {
     color: skyblue;
+}
+
+/* PROJECTS  */
+
+.oursagileProject, .nekoProject, .poseidonProject, .twitchdevProject, .skyaboveProject, .cloudwordsProject {
+    border: 4px double slategray;
+    text-align: center;
+    margin: 2em;
+    padding: 4em;
+}
+
+.oursagileProject:hover, .nekoProject:hover, .poseidonProject:hover, .twitchdevProject:hover, .skyaboveProject:hover, .cloudwordsProject:hover {
+    cursor: pointer;
+}
+
+.oursagileProject {
+    text-align: center;
+}
+
+.nekoProject {
+    text-align: center;
+}
+
+.poseidonProject {
+    text-align: center;
+}
+
+.twitchdevProject {
+    text-align: center;
+}
+
+.skyaboveProject {
+    text-align: center;
+}
+
+.cloudwordsProject {
+    grid-area: cloudwords;
+}
+
+.projectsContainerGrid a {
+    color: #000249;
+}
+
+.logoImg {
+    display: block;
+    margin: 1em auto 0;
+    width: 14%;
+    height: auto;
 }
