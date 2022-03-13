@@ -28,7 +28,7 @@ body {
 }
 
 .block {
-    padding-top: 0;
+    padding-top: 1em;
     width: 100vw;
 }
 
@@ -51,23 +51,17 @@ body {
 }
 
 .navbar {
-    position: fixed;
     display: flex;
     color: white;
-    margin-right: 1em;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 2em;
     align-items: flex-start;
-    width: 80vw;
-    height: 100vh;
-    background-color: #15276f;
-    z-index: 1;
 }
 
 .navbar a {
     text-decoration: none;
     color: currentColor;
-    font-size: smaller;
 }
 
 .navbar > span {
@@ -157,7 +151,7 @@ h2 {
 .travailFlex {
     padding: 2% 4% 4% 4%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     align-items: center;
     gap: 1.5em;
