@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ours-Agile</title>
@@ -11,8 +11,8 @@
 
 <body>
 <div class="block bluebg" id="top">
-    <div class="navbar" id="navbar">
-        <img src=static/images/burger.svg class=burger onclick=''>
+    <div class="navbar" id="navbar" style="width:80vw">
+        <img alt=burger src=static/images/burger.svg class=burger onclick='showHideNavBar()'>
         <span class=projectsNav><a href="#realisations">#Réalisations</a></span>
         <span><a href="#apropos">#À_Propos</a></span>
         <span><a href="/ressources/cv_dev_java_1page.pdf">#CV</a></span>
@@ -163,8 +163,8 @@
     <h2 class="contactTitle">Contact</h2>
     <div class="contactContainer">
         <form class="contactForm" action="/" method=post>
-            <input type="email" placeholder="email"><br>
-            <textarea placeholder=message rows=15 cols=48></textarea><br>
+            <label><input type="email" placeholder="email"></label><br>
+            <label><textarea placeholder=message rows=15 cols=48></textarea></label><br>
             <input type="submit">
         </form>
         <img alt="contactLogo" src=static/images/512nekoDodo.gif class=contactLogo>
@@ -176,6 +176,7 @@
     <p>Made with Love and <a href="https://ko-fi.com/aqueuse">Coffee</a></p>
 </div>
 
+<script src="static/script.js" type="application/javascript"></script>
 <script src="static/train.js" type="application/javascript"></script>
 </body>
 </html>
