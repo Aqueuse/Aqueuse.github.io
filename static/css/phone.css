@@ -24,7 +24,7 @@ p {
 .topButton {
     float: right;
     padding-right: 0.2em;
-    font-size: 2.5em;
+    font-size: 2.3em;
 }
 
 .projectLink {
@@ -141,7 +141,7 @@ h3 {
     align-items: center;
     flex-direction: column-reverse;
     gap:2em;
-    padding: 1em 7em 6em 7em;
+    padding: 1em 4em 6em 4em;
 }
 
 .presentationContainer p a {
@@ -160,7 +160,6 @@ h3 {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    gap: 1.5em;
 }
 
 .travailImage {
@@ -198,6 +197,10 @@ h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.contactForm textarea {
+    width:70%;
 }
 
 .footer {
