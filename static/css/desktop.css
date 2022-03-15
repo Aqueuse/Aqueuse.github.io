@@ -278,7 +278,7 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr; /* fr=fraction */
     grid-template-areas:
     "oursagile  neko     poseidon"
-    "twitchdev  skyabove cloudwords";
+    "cloudwords  skyabove twitchdev";
     background-color: #fff;
     color: #444;
 }
