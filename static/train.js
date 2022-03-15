@@ -1,4 +1,4 @@
-let trainLeftPos = 1000;
+let trainLeftPos = 0;
 let trainOrientation = "right";
 let speed = 0.05;
 let trainTimer = 60;
@@ -9,13 +9,13 @@ function update() {
     let middleScreen = windowWidth/2;
 
     let trainWidth = document.getElementById("train").offsetWidth;
-    let trainMedian = trainLeftPos-(trainWidth/2);
+    let trainMedian = trainLeftPos+(trainWidth/2);
 
     let stationWidth = document.getElementById("station").offsetWidth;
-    let leftStationBound = middleScreen-(stationWidth);
-    let rightStationBound = middleScreen+(stationWidth);
+    let leftStationBound = middleScreen-stationWidth;
+    let rightStationBound = middleScreen+stationWidth;
 
-    let fullSpeed = 6;
+    let fullSpeed = 5;
 
     trainOrientation = setTrainOrientation(trainOrientation, trainWidth, windowWidth);
 
