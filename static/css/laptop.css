@@ -17,12 +17,6 @@ body {
     color: black;
 }
 
-.topButton {
-    float: right;
-    padding-right: 2em;
-    font-size: 1.5em;
-}
-
 .projectLink {
     color: #000249;
 }
@@ -219,6 +213,25 @@ h2 {
     color: skyblue;
 }
 
+.topButton {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    text-decoration: none;
+    color: black;
+    background-color: ghostwhite;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    font-size: 2.85em;
+    line-height: .85em;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: .05em;
+    padding: 3px 5px;
+    white-space: nowrap;
+}
+
+/* PROJECTS  */
 
 .oursagileProject, .nekoProject, .poseidonProject, .twitchdevProject, .skyaboveProject, .cloudwordsProject {
     border: 4px double slategray;
