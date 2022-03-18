@@ -7,7 +7,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-body {
+body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -42,14 +42,35 @@ p {
     color: white;
 }
 
-.navbar {
+header{
+    position: fixed;
     width: 100vw;
+    background-color: #000249;
+
+}
+
+.burger{
+    position: relative;
+    z-index: 3;
+    width: 50px;
+    height: auto;
+}
+
+.navbar-off{
+    display: none;
+}
+.navbar {
+    position: fixed;
     display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
     color: white;
-    flex-direction: row;
     justify-content: center;
     gap: 2em;
     align-items: center;
+    background-color: #000249;
+    z-index: 2;
 }
 
 .navbar a {
@@ -60,6 +81,18 @@ p {
 .navbar > span {
     padding: 1em;
     font-size: 2em;
+}
+.navbar-off>span a{
+    color: white;
+    text-decoration: none;
+}
+.no-scroll{
+    overflow: hidden;
+    height: 100vh;
+}
+
+#projectsNav {
+    color: #FF6936;
 }
 
 .bienvenueParagraph {

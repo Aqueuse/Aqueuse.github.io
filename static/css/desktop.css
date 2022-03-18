@@ -59,6 +59,10 @@ body {
     display: none;
 }
 
+header{
+    background-color: #000249;
+
+}
 .navbar {
     width: 100vw;
     display: flex;
@@ -67,17 +71,34 @@ body {
     justify-content: center;
     gap: 2em;
     align-items: center;
+    background-color: #000249;
 }
 
-.navbar a {
+.navbar-off {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
     text-decoration: none;
-    color: currentColor;
+    color: white;
 }
 
-.navbar > span {
+.navbar-off > span {
     padding: 1em;
     font-size: 2em;
+
 }
+.navbar-off>span a{
+    color: white;
+    text-decoration: none;
+}
+
+
+#projectsNav {
+    color: #FF6936;
+}
+
 
 .bienvenueParagraph {
     position: relative;
@@ -85,10 +106,6 @@ body {
     text-align: center;
     font-family: monospace;
     font-size: 2.5em;
-}
-
-.projectsNav {
-    color: #FF6936;
 }
 
 .firstBlockText {
@@ -221,7 +238,7 @@ h2 {
 
 .topButton {
     position: fixed;
-    bottom: 50%;
+    bottom: 4%;
     right: 16px;
     text-decoration: none;
     color: #000249;
@@ -229,11 +246,12 @@ h2 {
     box-shadow: 2px 2px #000249;
     font-size: 2.85em;
     line-height: .85em;
-    display: inline-block;
+    display: none;
     font-weight: 600;
     letter-spacing: .05em;
     padding: 3px 5px;
     white-space: nowrap;
+    background-color: white;
 }
 
 /* PROJECTS  */
@@ -293,4 +311,3 @@ h2 {
     height: 14%;
     width: auto;
 }
-
