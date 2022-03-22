@@ -27,16 +27,16 @@ body {
     color: #000249;
 }
 
-.ascii-train-animation {
-}
-
 .ascii-train {
     position: relative;
+    width: 32%;
 }
 
 .ascii-station {
     position: relative;
     left: 17vw;
+    width: 10%;
+    padding-bottom: 0.5em;
 }
 
 .block {
