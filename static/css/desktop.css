@@ -21,23 +21,6 @@ body {
     color: #000249;
 }
 
-.ascii-train-animation {
-}
-
-.ascii-train {
-    width: 27%;
-    height: auto;
-    position: relative;
-}
-
-.ascii-station {
-    width: 8%;
-    height: auto;
-    position: relative;
-    left: 17vw;
-    margin-bottom: 1em;
-}
-
 .block {
     padding-top: 1em;
     width: 100vw;
@@ -95,7 +78,7 @@ header{
 }
 
 
-#projectsNav {
+#servicesNav {
     color: #FF6936;
 }
 
@@ -104,9 +87,15 @@ header{
     position: relative;
     padding: 1em 4em 1em 4em;
     text-align: center;
-    font-family: monospace;
-    font-size: 2.5em;
+    font-size: 2em;
 }
+
+.logo {
+    width: 45%;
+    height: auto;
+    text-align: center;
+}
+
 
 .firstBlockText {
     padding: 0;
@@ -116,7 +105,8 @@ header{
 }
 
 .firstBlockTextContainer {
-    padding: 20vh 0;
+    padding: 7vh 0;
+    text-align: center;
 }
 
 h1 {
@@ -132,21 +122,21 @@ h2 {
     padding-top: 1.5em;
 }
 
-.logoContainer {
+.socialNetwork_logoContainer {
     display: flex;
     justify-content: center;
     margin-top: 1em;
     gap: 2em;
 }
 
-.logo {
+.socialNetwork_logo {
     color:white;
     width: 2vw;
     height: auto;
     opacity: 30%;
 }
 
-.logo:hover {
+.socialNetwork_logo:hover {
     opacity: 95%;
 }
 
@@ -157,8 +147,8 @@ h2 {
 
 .presentationContainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap:10em;
     padding: 1em 20em 6em 20em;
 }
 

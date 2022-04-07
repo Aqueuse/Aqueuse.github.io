@@ -13,44 +13,35 @@
 <header>
     <img class="burger" id="burger" src="./static/images/burger.svg" alt="">
     <div class="navbar-off">
-        <span><a id="projectsNav" href="#realisations">#Réalisations</a></span>
+        <span><a href="#realisations">#Réalisations</a></span>
+        <span><a id="servicesNav"  href="#services">#Services</a></span>
         <span><a href="#apropos">#À_Propos</a></span>
-        <span><a href="/ressources/cv_dev_java_1page.pdf">#CV</a></span>
         <span><a href="#contact">#Contact</a></span>
     </div>
 </header>
 <div class="block bluebg" id="top">
     <div class="firstBlockTextContainer">
-        <p class=firstBlockText>Hello,</p>
-        <h1><i>I'm Laura B</i></h1>
-        <p class=firstBlockText>Backend Developer, specialized in Java.</p>
-        <div class=logoContainer>
-            <a href="https://github.com/Aqueuse"><img src=static/images/socialNetworks/github.svg class=logo alt="Github"></a>
-            <a href="https://www.linkedin.com/in/laura-b%C3%A9cogn%C3%A9e/"><img src=static/images/socialNetworks/linkedin.svg class=logo alt="Linkedin"></a>
-            <a href="https://www.twitch.tv/aqueuse"><img src=static/images/socialNetworks/twitch.svg class=logo alt="Twitch"></a>
-            <a href="https://twitter.com/TrilbyOFerrall"><img src=static/images/socialNetworks/twitter.svg class=logo alt="Twitter"></a>
-        </div>
-    </div>
-    <div class="ascii-train-animation">
-        <span style="background-color: red; width: 5px; position: absolute; left: 1113px; top: 500px;"></span>
-        <img id=train alt=loco class=ascii-train src=static/images/loco_super_cleaned.svg>
-        <img id=station alt=station class=ascii-station src=static/images/station_super_cleaned.svg>
+        <img class="logo"
+             src="./static/images/truffe_animated_ours-agile.gif"
+             onmouseover="this.src='./static/images/full_animated_ours-agile.gif'"
+             onmouseout="this.src='./static/images/truffe_animated_ours-agile.gif'" alt="logo">
+        <p class=firstBlockText>Des applications pour tous vos besoins</p>
     </div>
 </div>
-<div class="block whitebg">
-    <p class="bienvenueParagraph">Bienvenue !<br>
-    Ce site internet a<br>
-    pour vocation de décrire<br>
-    mon travail et mes passions
+<div class="block whitebg" id="services">
+    <p class="bienvenueParagraph">Mes services<br>
+        developpement d'applications Web<br>
+        developpement d'applications Desktop<br>
+        developpement de progressives web applications
     </p>
 </div>
 <div class="block bluebg" id="apropos">
     <a class="topButton" title="top" href=#top style="display: none">↑</a>
-    <h2 class="presentationTitle">Qui suis je ?</h2>
     <div class="presentationContainer">
+        <h2 class="presentationTitle">Qui suis je ?</h2>
         <p>
             Je m'appelle Laura Bécognée et je suis une geekette / Hackeuse / bidouilleuse depuis toujours. Je craft, que
-            ce soit du matériel (robotique, textile, menuiserie, outils, chaussures un jour)  ou du logiciel
+            ce soit du matériel (électronique, robotique, textile, menuiserie, outils, chaussures)  ou du logiciel
             (applications desktop, web, jeu vidéo).
             <br><br>
             J'aime aussi écrire et j'ai rédigé beaucoup d'articles
@@ -59,10 +50,16 @@
             N'hésitez pas à me <a href="#contact">contacter</a> si vous avez des projets.
         </p>
         <img class="photo" src="static/images/photo.png" alt="photo">
+        <div class=socialNetwork_logoContainer>
+            <a href="https://github.com/Aqueuse"><img src=static/images/socialNetworks/github.svg class=socialNetwork_logo alt="Github"></a>
+            <a href="https://www.linkedin.com/in/laura-b%C3%A9cogn%C3%A9e/"><img src=static/images/socialNetworks/linkedin.svg class=socialNetwork_logo alt="Linkedin"></a>
+            <a href="https://www.twitch.tv/aqueuse"><img src=static/images/socialNetworks/twitch.svg class=socialNetwork_logo alt="Twitch"></a>
+            <a href="https://twitter.com/TrilbyOFerrall"><img src=static/images/socialNetworks/twitter.svg class=socialNetwork_logo alt="Twitter"></a>
+        </div>
     </div>
 </div>
 <div class="block whitebg" id="realisations">
-    <h1 class="realisationsTitle">Mes réalisations</h1>
+    <h1 class="realisationsTitle">Réalisations</h1>
     <div class="projectsContainerGrid">
         <div class="oursagileProject" onclick="window.open('https://github.com/Aqueuse/ours-agile-unity', '_self')">
             <img class="logoImg" src="static/images/projects/ours.png" alt="oursAgile">
@@ -183,6 +180,5 @@
 </div>
 
 <script src="static/script.js" type="application/javascript"></script>
-<script src="static/train.js" type="application/javascript"></script>
 </body>
 </html>
