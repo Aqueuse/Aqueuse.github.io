@@ -1,0 +1,144 @@
+* {box-sizing:border-box}
+
+html, body {
+    font-family: "DejaVu Serif", serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000249;
+}
+
+img:not(.logo) {
+    background-color: white;
+    border-radius: 50%;
+    width: 30%;
+}
+
+.logo {
+    width: 30%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 2000px;
+    position: relative;
+    margin: auto;
+}
+
+.slideContent {
+    padding: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+header {
+    background-color: #000249;
+}
+
+.slideTitle {
+ font-size: 2.5vw;
+}
+
+.slideTitleActive {
+    color: #FF6936;
+}
+
+.navbar-off {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4em;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.text {
+    color: whitesmoke;
+    font-size: 1.5vw;
+    padding: 8px 12px;
+    bottom: 8px;
+    text-align: left;
+    width: 40%;
+}
+
+a:not(.slideTitle,.prev,.next) {
+    color: #FF6936;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+to {opacity: 1}
+}
+
+.footer {
+    padding: 0.5em;
+    font-size: 1vw;
+}
+
+.footer p {
+    text-align: center;
+    color : whitesmoke;
+}
+
+.footer a {
+    color: skyblue;
+}
