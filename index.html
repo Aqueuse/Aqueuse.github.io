@@ -1,79 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
-    <title>Ours-Agile</title>
-    <link rel="stylesheet" media='screen and (min-width: 1280px)' href="static/css/desktop.css"/>
-    <link rel="stylesheet" media='screen and (min-width: 1024px) and (max-width: 1279px)' href="static/css/laptop.css"/>
-    <link rel="stylesheet" media='screen and (min-width: 768px) and (max-width: 1023px)' href="static/css/tablet.css"/>
-    <link rel="stylesheet" media='screen and (max-width: 767px)' href="static/css/phone.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+<title>Ours-Agile</title>
+<link rel="stylesheet" href="new_index.css"/>
+
+<!-- <link rel="stylesheet" media='screen and (min-width: 1280px)' href="static/css/desktop.css"/>
+<link rel="stylesheet" media='screen and (min-width: 1024px) and (max-width: 1279px)' href="static/css/laptop.css"/>
+<link rel="stylesheet" media='screen and (min-width: 768px) and (max-width: 1023px)' href="static/css/tablet.css"/>
+<link rel="stylesheet" media='screen and (max-width: 767px)' href="static/css/phone.css"/> -->
 </head>
 
 <body>
-<header>
-    <img class="burger" id="burger" src="./static/images/burger.svg" alt="">
-    <div class="navbar-off">
-        <span><a href="#realisations">#Réalisations</a></span>
-        <span><a id="servicesNav"  href="#services">#Services</a></span>
-        <span><a href="#apropos">#À_Propos</a></span>
-        <span><a href="#contact">#Contact</a></span>
-    </div>
-</header>
-<div class="block bluebg" id="top">
-    <div class="firstBlockTextContainer">
-        <img class="logo"
-             src="./static/images/truffe_animated_ours-agile.gif"
-             onmouseover="this.src='./static/images/full_animated_ours-agile.gif'"
-             onmouseout="this.src='./static/images/truffe_animated_ours-agile.gif'" alt="logo">
-        <p class=firstBlockText>Des applications pour tous vos besoins</p>
-    </div>
-</div>
-<div class="block whitebg" id="services">
-    <h2>Mes services</h2>
-    <div class="servicesContainer">
-        <div class="servicesBlock">
-            <h3>Diagnostic</h3>
-            <p>Peu importe l'état initial de votre produit, nous pouvons vous apporter un diagnostic et des pistes d'améliorations.</p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <header>
+        <div class="navbar-off">
+            <span><a class="slideTitle" onclick="currentSlide(1)"># JeuxVideos</a></span>
+            <span><a class="slideTitle" onclick="currentSlide(2)">#Applications</a></span>
+            <span><a class="slideTitle" onclick="currentSlide(3)">#Contact</a></span>
+            <span><a class="slideTitle" onclick="currentSlide(4)">#APropos</a></span>
         </div>
-        <div class="servicesBlock">
-            <h3>Documentation</h3>
-            <p>Pour chaque projet, nous avons à cœur de vous livrer une documentation pérenne pour vous, vos utilisateurs et vos futurs collaborateurs.</p>
+    </header>
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides fade" style="display: block;">
+    <div class="slideContent">
+        <img src="static/images/projects/banana_man_in_jungle_square.png">
+        <div class="text">Un jeu de tir à la troisième personne impliquant des bananes et des singes géants.</div>
+    </div>
+</div>
+
+<div class="mySlides fade" style="display: none;">
+    <div class="slideContent">
+        <img src="static/images/projects/cloudWords.jpg">
+        <div class="text">Des nuages de mots pour cerner les attentes des recruteurs de façon statistique et rapide.</div>
+    </div>
+</div>
+
+<div class="mySlides fade" style="display: none;">
+    <div class="slideContent">
+        <img src="static/images/neko_resized.gif">
+        <div class="contactContainer">
+            <form class="contactForm" action="/" method=post>
+                <label><input type="email" placeholder="email"></label><br>
+                <label><textarea placeholder=message rows=15 cols=48></textarea></label><br>
+                <input type="submit">
+            </form>
         </div>
-        <div class="servicesBlock">
-            <h3>Développement</h3>
-            <p>Nous pouvons développer les outils et applications nécessaires à la réussite de votre projet (application, jeu, etc)</p>
-        </div>
     </div>
 </div>
-<div class="block bluebg" id="clients">
-    <div class="clientsContainer">
-        <div>Twitch</div>
-        <div>Pole Emploi</div>
+
+<div class="mySlides fade" style="display: none;">
+    <div class="slideContent">
+        <img src="static/images/logo_ours-agile-squared.gif" class="logo">
+        <p class="text">Je m'appelle Laura Bécognée et je suis une geekette / Hackeuse / bidouilleuse depuis toujours. Je craft, que
+            <br><br>
+            ce soit du matériel (électronique, robotique, textile, menuiserie, outils, chaussures)  ou du logiciel (applications desktop, web, jeu vidéo).
+            <br><br>
+            J'aime aussi écrire et j'ai rédigé beaucoup d'articles
+            <br><br>
+            N'hésitez pas à me <a href="#contact">contacter</a> si vous avez des projets.
+        </p>
     </div>
-</div>
-<div class="block whitebg" id="contact">
-    <h2 class="contactTitle">Contact</h2>
-    <div class="contactContainer">
-        <form class="contactForm" action="/" method=post>
-            <label><input type="email" placeholder="email"></label><br>
-            <label><textarea placeholder=message rows=15 cols=48></textarea></label><br>
-            <input type="submit">
-        </form>
-        <img alt="contactLogo" src=static/images/512nekoDodo.gif class=contactLogo>
     </div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-<!--<div class="block bluebg" id="confiance">-->
-<!--    <h1 class="realisationsTitle">Ils nous ont fait confiance</h1>-->
-<!--    <div class="projectsContainerGrid">-->
-<!--        <p>Détailler</p>-->
-<!--    </div>-->
-<!--</div>-->
-<div class="block bluebg footer">
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<div class="footer">
     <p>Hébergé with Github</p>
     <p>Made with Love and <a href="https://ko-fi.com/aqueuse">Coffee</a></p>
     <p>Ours Agile - SIRET n° 911724 169 00014</p>
 </div>
 
-<script src="static/script.js" type="application/javascript"></script>
 </body>
+
+<script defer src=new_index.js></script>
+
 </html>
