@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "FORCED_SQUARE";
-    src: url("fonts/FORCED_SQUARE.ttf");
+    src: url("../fonts/FORCED_SQUARE.ttf");
 }
 
 * {
@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url("img/background.jpg");
+    background-image: url("../images/projects/bananaMan/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -58,7 +58,6 @@ a {
     background-color: rgb(118 118 118 / 20%);
     color: aliceblue;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     overflow: hidden;
 }
 
