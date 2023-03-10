@@ -55,7 +55,7 @@ a {
     width: 100%;
     margin-left: 0%;
     margin-right: 5px;
-    background-color: rgb(118 118 118 / 20%);
+    background-color: rgb(38 38 38 / 20%);
     color: aliceblue;
     text-align: center;
     overflow: hidden;
@@ -78,4 +78,8 @@ a {
 
 h1, h2 {
     color:#dfc628;
+}
+
+pre {
+    font-size: x-large;
 }
