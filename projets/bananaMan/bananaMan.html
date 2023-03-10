@@ -10,184 +10,363 @@
 </head>
 
 <body>
-    <main>
-        <div id="container">
-            <img id="logo" src="../../static/images/projects/bananaMan/titleWhite.png"><br>
-            <div class="liseret"></div>
+    <div id="switch-lang">
+        <a class="lang lang-fr">Fr</a>
+        <a class="lang lang-en">En</a>
+    </div>
 
-            <a href="https://discord.gg/2SUscY39dw"><img style="width:200px; height:auto"
+    <div id="container">
+        <img id="logo" src="../../static/images/projects/bananaMan/titleWhite.png"><br>
+
+        <div class="liseret"></div>
+        <a href="https://discord.gg/2SUscY39dw"><img style="width:200px; height:auto"
                 src="../../static/images/projects/bananaMan/discord-logo-white.png"></a>
 
-            <p>Venez rencontrer d'autres joueurs sur le <a href="https://discord.gg/2SUscY39dw">discord du jeu</a></p>
+<div class="en" style="display: block;">
+<pre>Meet others players on the <a href="https://discord.gg/2SUscY39dw">discord of the game</a></pre>
 
-            <div class="liseret"></div>
+<div class="liseret"></div>
 
-            <h1>Road Map</h1>
+<h1>Road Map</h1>
 
-            <h2>TODO</h2>
+<h2>TODO</h2>
 
-            <pre>Les canvas des bananiers doivent aussi lookAt verticaly (ajouter une option dans la classe)
-        
-        la sauvegarde sauve la position et le type des plateformes
-        
-        musique de la cinématique
-        musique de la map01
-        musique de le commande room
-        musique de la corolle
-        musique du menu
-        musique de lancement du jeu
-        
-        il y a un canon à bananes au bout de chaque map pour tirer sur des vaisseaux d'hommes-singes et faire
-        tomber des débris sur la map
-        
-        banana man peut traverser le feuillage, ça fait un effet de bruissement (collider + bruit + shader)
-        
-        refaire le character controller et le saut
-        améliorer/compléter les animations
-        
-        faire un shader de visualisation de la santé du perso (tâches noires)
-        
-        tomber au delà d'une certaine hauteur occasionne des dégats (et passe en ragdoll ?)
-        
-        offrir une option pour remplacer la voix par du gibberish
-        
-        footstep sur le gorille</pre>
+<pre>
+    STEAM:
+    Complete description + tag
 
-            <h2>FIN DU DEV DE LA DEMO (hors bugs)</h2>
+    TODO:
 
-            <pre>
-        le multi : publication de maps, test de maps (chronométrage, partage du temps, tableau des meilleurs temps)
-        
-        on peut changer la couleurs des batiments en tirant dessus
-        
-        on peut customiser l'apparence des plateformes
-        
-        il y a un mini chimp au guichet d'entrée à côté du sas 
-        </pre>
+    The banana tree canvases should also look vertically towards the player (add an option in the class).
 
-            <h2>La mise à jour du babouin (the baboon update)</h2>
+    The save system should save the position and type of the platforms.
 
-            <pre>
-        * un nouveau type de munition par grosse mise à jour (dont grappin)
-        * sons de la nouvelle munition
-        * un nouveau singe
-        * une nouvelle map
-        * musique de la map
-        * un nouveau comportement de plateforme
-        * un nouveau quartier de la corolle : stand de tir
-        * sons du quartier
-        </pre>
+    Music for the cinematic.
 
-            <h2>La mise à jour du capucin (the capuchin update)</h2>
+    Music for map01.
 
-            <pre>
-        * un nouveau type de munition par grosse mise à jour (dont grappin)
-        * sons de la nouvelle munition
-        * un nouveau singe
-        * une nouvelle map
-        * musique de la map
-        * un nouveau comportement de plateforme
-        * un nouveau quartier de la corolle : restaurant
-        * sons du quartier
-        
-            le restaurant permet de cuisiner en combinant des bananes
-            il est tenu par un mini chimp qui nous apporte à table des plats 
-            ces plats donnent des buffs spécifiques
-        </pre>
+    Music for the command room.
 
-            <h2>La mise à jour du ouistiti (the marmoset update)</h2>
+    Music for the corolla.
 
-            <pre>
-        * un nouveau type de munition par grosse mise à jour (dont grappin)
-        * sons de la nouvelle munition
-        * un nouveau singe
-        * une nouvelle map
-        * musique de la map
-        * un nouveau comportement de plateforme
-        * un nouveau quartier de la corolle : banana transmutator
-        * sons du quartier
-        </pre>
+    Music for the menu.
 
-            <h2>La mise à jour du orang-outan (the orangutan update)</h2>
+    Music for the game launch.
 
-            <pre>
-        * un nouveau type de munition par grosse mise à jour (dont grappin)
-        * sons de la nouvelle munition
-        * un nouveau singe
-        * une nouvelle map
-        * musique de la map
-        * un nouveau comportement de plateforme
-        * un nouveau quartier de la corolle : boutique
-        * sons du quartier
-        
-            il y a un mini chimp à la boutique
-            la boutique permet d'acheter les élements cosmétiques du jeu
-        </pre>
+    There is a banana cannon at the end of each map to shoot at monkey-man spacecraft and make debris fall
+    on the map.
 
-            <h2>La mise à jour du lémurien (the lemur update)</h2>
+    Banana man can move through the foliage, creating a rustling effect (collider + noise + shader).
 
-            <pre>
-        * un nouveau type de munition par grosse mise à jour (dont grappin)
-        * sons de la nouvelle munition
-        * un nouveau singe
-        * une nouvelle map
-        * musique de la map
-        * un nouveau comportement de plateforme
-        * un nouveau quartier de la corolle : jardins et félins
-        * sons du quartier
-        </pre>
+    Rework the character controller and jumping.
 
-            <h2>La mise à jour du gibbon (the gibbon update)</h2>
+    Improve/complete the animations.
 
-            <pre>
-        * un nouveau type de munition par grosse mise à jour (dont grappin)
-        * sons de la nouvelle munition
-        * un nouveau singe
-        * une nouvelle map
-        * musique de la map
-        * un nouveau comportement de plateforme
-        * un nouveau quartier de la corolle : musée des singes
-        * sons du quartier
-        </pre>
+    Create a shader to visualize the player's health (black spots).
 
-            <h2>La mise à jour du chimpanzé (the chimpanzee update)</h2>
+    Falling from a certain height causes damage (and goes into ragdoll mode?).
 
-            <pre>
-        * un nouveau type de munition par grosse mise à jour (dont grappin)
-        * sons de la nouvelle munition
-        * un nouveau singe
-        * une nouvelle map
-        * musique de la map
-        * un nouveau comportement de plateforme
-        * un nouveau quartier de la corolle : quartier libre
-        * sons du quartier
-        
-            le quartier libre dans la corolle est aménageable par le player qui
-            peut y batir comme il le souhaite
-        </pre>
+    Offer an option to replace the voice with gibberish.
 
-            <h2>La mise à jour de Miss Chiquita (the miss chiquita update)</h2>
+    Footstep sound for the gorilla.
 
-            <pre>
-        * un nouveau type de munition par grosse mise à jour (dont grappin)
-        * sons de la nouvelle munition
-        * un nouveau singe
-        * une nouvelle map
-        * musique de la map
-        * un nouveau comportement de plateforme
-        
-            chance de croiser miss chiquita dans la corolle (la vaincre + rendre tous les singes heureux
-            permet de devenir le roi des singes)
-        
-            quand tu réussis à devenir le roi des singes, tu peux laisser venir le singe de ton choix
-            dans la corolle (jusqu'à ce qu'il soit en manque de bananes)
-            et du coup il y aura des comportements spécifiques par quartier  et tu pourra te balader avec lui
-        </pre>
-        </div>
-    </main>
-    <footer>
-        <div>Made by <a href="https://foxy-whitetrack.xyz/">Foxy</a> Agile - 2023</div>
-    </footer>
+    END OF THE DEMO DEVELOPMENT (excluding bugs)
+    Multiplayer: map publication, map testing (timing, time sharing, leaderboard).
+
+    Buildings can change color when shot at.
+
+    Customize the appearance of platforms.
+
+    There is a mini chimp at the entrance desk next to the airlock.
+</pre>
+
+<h2>The Baboon Update</h2>
+<pre>
+    * A new type of ammo for each major update (including a grapple).
+    * Sounds for the new ammo.
+    * A new monkey.
+    * A new map.
+    * Music for the map.
+    * A new platform behavior.
+    * A new section of the corolla: shooting range.
+    * Sounds for the section.
+</pre>
+
+<h2>The Capuchin Update</h2>
+<pre>
+    * A new type of ammo for each major update (including a grapple).
+    * Sounds for the new ammo.
+    * A new monkey.
+    * A new map.
+    * Music for the map.
+    * A new platform behavior.
+    * A new section of the corolla: restaurant.
+    * Sounds for the section.
+
+    The restaurant allows players to cook by combining bananas.
+    It is run by a mini chimp who serves dishes at the table.
+    These dishes give specific buffs.
+</pre>
+
+<h2>The Marmoset Update</h2>
+<pre>
+    * A new type of ammo for each major update (including a grapple).
+    * Sounds for the new ammo.
+    * A new monkey.
+    * A new map.
+    * Music for the map.
+    * A new platform behavior.
+    * A new section of the corolla: banana transmutator.
+    * Sounds for the section.
+</pre>
+
+<h2>The Orangutan Update</h2>
+<pre>
+    * A new type of ammo for each major update (including a grapple).
+    * Sounds for the new ammo.
+    * A new monkey.
+    * A new map.
+    * Music for the map.
+    * A new platform behavior.
+    * A new section of the corolla: shop.
+    * Sounds for the section.
+
+    There is a mini chimp at the shop.
+    The shop allows players to purchase cosmetic elements in the game.
+</pre>
+
+<h2>The Lemur Update</h2>
+<pre>
+    * A new type of ammunition with each major update (including a grappling hook)
+    * Sounds for the new ammunition
+    * A new monkey
+    * A new map
+    * Map music
+    * A new platform behavior
+    * A new neighborhood in the Corolla: Gardens and Felines
+    * Sounds for the neighborhood
+</pre>
+
+<h2>The Gibbon Update</h2>
+<pre>
+    * A new type of ammunition with each major update (including a grappling hook)
+    * Sounds for the new ammunition
+    * A new monkey
+    * A new map
+    * Map music
+    * A new platform behavior
+    * A new neighborhood in the Corolla: Monkey Museum
+    * Sounds for the neighborhood
+</pre>
+
+<h2>The Chimpanzee Update</h2>
+<pre>
+    * A new type of ammunition with each major update (including a grappling hook)
+    * Sounds for the new ammunition
+    * A new monkey
+    * A new map
+    * Map music
+    * A new platform behavior
+    * A new neighborhood in the Corolla: Free District
+    * Sounds for the neighborhood
+
+    The Free District in the Corolla is customizable by the player,
+    who can build as desired.
+</pre>
+
+<h2>The Miss Chiquita Update</h2>
+<pre>
+    * A new type of ammunition with each major update (including a grappling hook)
+    * Sounds for the new ammunition
+    * A new monkey
+    * A new map
+    * Map music
+    * A new platform behavior
+
+    Chance of encountering Miss Chiquita in the Corolla (defeating her and making all the monkeys happy
+    allows the player to become the monkey king)
+
+    When the player becomes the monkey king, they can invite the monkey of their choice
+    into the Corolla (until they run out of bananas),
+    and there will be specific behaviors for each neighborhood, so the player can take a walk with their chosen monkey.
+</pre>
+</div>
+
+<div class="fr" style="display: none;">
+<pre>Venez rencontrer d'autres joueurs sur le <a href="https://discord.gg/2SUscY39dw">discord du jeu</a></pre>
+
+<div class="liseret"></div>
+
+<h1>Road Map</h1>
+
+<h2>TODO</h2>
+
+<pre>
+    Les canvas des bananiers doivent aussi lookAt verticaly (ajouter une option dans la classe)
+
+    la sauvegarde sauve la position et le type des plateformes
+    
+    musique de la cinématique
+    musique de la map01
+    musique de le commande room
+    musique de la corolle
+    musique du menu
+    musique de lancement du jeu
+    
+    il y a un canon à bananes au bout de chaque map pour tirer sur des vaisseaux d'hommes-singes et faire
+    tomber des débris sur la map
+    
+    banana man peut traverser le feuillage, ça fait un effet de bruissement (collider + bruit + shader)
+    
+    refaire le character controller et le saut
+    améliorer/compléter les animations
+    
+    faire un shader de visualisation de la santé du perso (tâches noires)
+    
+    tomber au delà d'une certaine hauteur occasionne des dégats (et passe en ragdoll ?)
+    
+    offrir une option pour remplacer la voix par du gibberish
+
+    footstep sur le gorille
+</pre>
+
+<h2>FIN DU DEV DE LA DEMO (hors bugs)</h2>
+
+<pre>
+    le multi : publication de maps, test de maps (chronométrage, partage du temps, tableau des meilleurs temps)
+    
+    on peut changer la couleurs des batiments en tirant dessus
+    
+    on peut customiser l'apparence des plateformes
+    
+    il y a un mini chimp au guichet d'entrée à côté du sas 
+</pre>
+
+<h2>La mise à jour du babouin (the baboon update)</h2>
+
+<pre>
+    * un nouveau type de munition par grosse mise à jour (dont grappin)
+    * sons de la nouvelle munition
+    * un nouveau singe
+    * une nouvelle map
+    * musique de la map
+    * un nouveau comportement de plateforme
+    * un nouveau quartier de la corolle : stand de tir
+    * sons du quartier
+</pre>
+
+<h2>La mise à jour du capucin (the capuchin update)</h2>
+
+<pre>
+    * un nouveau type de munition par grosse mise à jour (dont grappin)
+    * sons de la nouvelle munition
+    * un nouveau singe
+    * une nouvelle map
+    * musique de la map
+    * un nouveau comportement de plateforme
+    * un nouveau quartier de la corolle : restaurant
+    * sons du quartier
+
+    le restaurant permet de cuisiner en combinant des bananes
+    il est tenu par un mini chimp qui nous apporte à table des plats 
+    ces plats donnent des buffs spécifiques
+</pre>
+
+<h2>La mise à jour du ouistiti (the marmoset update)</h2>
+
+<pre>
+    * un nouveau type de munition par grosse mise à jour (dont grappin)
+    * sons de la nouvelle munition
+    * un nouveau singe
+    * une nouvelle map
+    * musique de la map
+    * un nouveau comportement de plateforme
+    * un nouveau quartier de la corolle : banana transmutator
+    * sons du quartier
+</pre>
+
+<h2>La mise à jour du orang-outan (the orangutan update)</h2>
+
+<pre>
+    * un nouveau type de munition par grosse mise à jour (dont grappin)
+    * sons de la nouvelle munition
+    * un nouveau singe
+    * une nouvelle map
+    * musique de la map
+    * un nouveau comportement de plateforme
+    * un nouveau quartier de la corolle : boutique
+    * sons du quartier
+    
+    il y a un mini chimp à la boutique
+    la boutique permet d'acheter les élements cosmétiques du jeu
+</pre>
+
+<h2>La mise à jour du lémurien (the lemur update)</h2>
+
+<pre>
+    * un nouveau type de munition par grosse mise à jour (dont grappin)
+    * sons de la nouvelle munition
+    * un nouveau singe
+    * une nouvelle map
+    * musique de la map
+    * un nouveau comportement de plateforme
+    * un nouveau quartier de la corolle : jardins et félins
+    * sons du quartier
+</pre>
+
+<h2>La mise à jour du gibbon (the gibbon update)</h2>
+
+<pre>
+    * un nouveau type de munition par grosse mise à jour (dont grappin)
+    * sons de la nouvelle munition
+    * un nouveau singe
+    * une nouvelle map
+    * musique de la map
+    * un nouveau comportement de plateforme
+    * un nouveau quartier de la corolle : musée des singes
+    * sons du quartier
+</pre>
+
+<h2>La mise à jour du chimpanzé (the chimpanzee update)</h2>
+
+<pre>
+    * un nouveau type de munition par grosse mise à jour (dont grappin)
+    * sons de la nouvelle munition
+    * un nouveau singe
+    * une nouvelle map
+    * musique de la map
+    * un nouveau comportement de plateforme
+    * un nouveau quartier de la corolle : quartier libre
+    * sons du quartier
+
+    le quartier libre dans la corolle est aménageable par le player qui
+    peut y batir comme il le souhaite
+</pre>
+
+<h2>La mise à jour de Miss Chiquita (the miss chiquita update)</h2>
+
+<pre>
+    * un nouveau type de munition par grosse mise à jour (dont grappin)
+    * sons de la nouvelle munition
+    * un nouveau singe
+    * une nouvelle map
+    * musique de la map
+    * un nouveau comportement de plateforme
+
+    chance de croiser miss chiquita dans la corolle (la vaincre + rendre tous les singes heureux
+    permet de devenir le roi des singes)
+
+    quand tu réussis à devenir le roi des singes, tu peux laisser venir le singe de ton choix
+    dans la corolle (jusqu'à ce qu'il soit en manque de bananes)
+    et du coup il y aura des comportements spécifiques par quartier  et tu pourra te balader avec lui
+</pre>
+</div>
+</div>
+
+<script src="../../static/multi-lang.js"></script>
+<footer>
+    <div>Made by <a href="https://foxy-whitetrack.xyz/">Foxy WhiteTrack</a> Agile - 2023</div>
+</footer>
 
 </body>
 
