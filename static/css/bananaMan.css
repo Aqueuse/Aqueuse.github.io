@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+@font-face {
+    font-family: "FORCED_SQUARE";
+    src: url("fonts/FORCED_SQUARE.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'FORCED_SQUARE';
+}
+
+body {
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    margin: auto;
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+    border: 3px solid green;
+    padding: 30px;
+    padding-top: 10px;
+    font-family: 'Lora', serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    border-radius: 30px;
+}
+
+
+footer {
+    border-top: 2px solid #dfc628;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#container {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 5px;
+    background-color: rgb(118 118 118 / 20%);
+    color: aliceblue;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+}
+
+#logo {
+    width: 70%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.liseret {
+    background-color: white;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: 4px;
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color:#dfc628;
+}
