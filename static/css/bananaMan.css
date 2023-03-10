@@ -76,10 +76,26 @@ a {
     margin-bottom: 40px;
 }
 
-h1, h2 {
-    color:#dfc628;
+h1,
+h2 {
+    color: #dfc628;
 }
 
 pre {
     font-size: x-large;
+}
+
+#switch-lang {
+    padding: 10px 40px 40px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap:10px;
+    font-size: x-large;
+}
+
+.lang:hover {
+    color: #dfc628;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
