@@ -1,18 +1,24 @@
 
 import * as THREE from 'three';
 
+<<<<<<< HEAD
+=======
+import Stats from 'three/addons/libs/stats.module.js';
+
+>>>>>>> parent of 93d6d45 (update !)
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 //fbx
 import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
-//export
-import { GLTFExporter } from 'three/addons/exporters/GLTFExporter.js';
 
-//let stats;
-let container;
+let container, stats;
 let camera, controls, scene, renderer;
-let meshs = [];
 
+<<<<<<< HEAD
 let skyBox;
+=======
+let mesh, skyBox;
+let helper;
+>>>>>>> parent of 93d6d45 (update !)
 
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2();
@@ -22,17 +28,12 @@ fetch('config.json').then(response => response.json()).then(data => {
   animate();
 })
 
-
 function init(url, scale) {
 
   container = document.getElementById('container');
   container.innerHTML = '';
 
-  renderer = new THREE.WebGLRenderer({
-    alpha: true,
-    antialias: true
-  });
-
+  renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
   container.appendChild(renderer.domElement);
@@ -44,21 +45,32 @@ function init(url, scale) {
 //  scene.fog = new THREE.Fog(0xbfd1e5, 1000, 10000);
 
   //skybox
+<<<<<<< HEAD
   const skySphereGeometry = new THREE.SphereGeometry(10000, 32, 32);
   const skyMaterial = new THREE.MeshBasicMaterial({ color: 0x9999ff, side: THREE.BackSide });
   skyBox = new THREE.Mesh(skySphereGeometry, skyMaterial);
 
   scene.add(skyBox);
 
+=======
+  const skyBoxGeometry = new THREE.BoxGeometry(10000, 10000, 10000);
+  const skyBoxMaterial = new THREE.MeshBasicMaterial({ color: 0x9999ff, side: THREE.BackSide });
+  skyBox = new THREE.Mesh(skyBoxGeometry, skyBoxMaterial);
+  scene.add(skyBox);
+
+
+
+
+>>>>>>> parent of 93d6d45 (update !)
   let fbxLoader = new FBXLoader();
 
   fbxLoader.load(url, function (object) {
     object.traverse(function (child) {
-
       if (child.isMesh) {
         child.castShadow = true;
         child.receiveShadow = true;
       }
+<<<<<<< HEAD
 
       if (child.type === "Mesh") {
         let newMesh = child.clone();
@@ -75,21 +87,30 @@ function init(url, scale) {
 
         console.log(child);
       }
+=======
+>>>>>>> parent of 93d6d45 (update !)
     });
-    console.log(object);
+
+    mesh = object;
+    
     scene.add(object);
   })
 
   // Lights
+<<<<<<< HEAD
   const dirLight1 = new THREE.DirectionalLight(0xffffff);
   dirLight1.position.set(1, 1, 1);
   dirLight1.rotation.set(0, 45, 0);
+=======
+
+  const dirLight1 = new THREE.DirectionalLight(0xffffff);
+  dirLight1.position.set(1, 1, 1);
+>>>>>>> parent of 93d6d45 (update !)
   scene.add(dirLight1);
 
   camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 10, 20000);
 
   controls = new OrbitControls(camera, renderer.domElement);
-
   controls.minDistance = 1000;
   controls.maxDistance = 10000;
   controls.maxPolarAngle = Math.PI / 2;
@@ -101,8 +122,22 @@ function init(url, scale) {
 
   controls.update();
 
+<<<<<<< HEAD
   container.addEventListener('pointermove', onPointerMove);
   container.addEventListener('click', onPointerClick);
+=======
+  const geometryHelper = new THREE.ConeGeometry(20, 100, 3);
+  geometryHelper.translate(0, 50, 0);
+  geometryHelper.rotateX(Math.PI / 2);
+  helper = new THREE.Mesh(geometryHelper, new THREE.MeshNormalMaterial());
+  scene.add(helper);
+
+
+  container.addEventListener('pointermove', onPointerMove);
+
+  stats = new Stats();
+  container.appendChild(stats.dom);
+>>>>>>> parent of 93d6d45 (update !)
   window.addEventListener('resize', onWindowResize);
 }
 
@@ -119,12 +154,17 @@ function animate() {
   skyBox.position.copy(camera.position);
 
   render();
+<<<<<<< HEAD
+=======
+  stats.update();
+>>>>>>> parent of 93d6d45 (update !)
 }
 
 function render() {
   renderer.render(scene, camera);
 }
 
+<<<<<<< HEAD
 const modelName = document.body.querySelector("#model-name");
 const modelDescription = document.body.querySelector("#model-description");
 const modelUser = document.body.querySelector("#model-user");
@@ -186,25 +226,36 @@ modelNameDownload.addEventListener('click', function () {
   }
 });
 
+=======
+>>>>>>> parent of 93d6d45 (update !)
 function onPointerMove(event) {
 
   pointer.x = (event.clientX / renderer.domElement.clientWidth) * 2 - 1;
   pointer.y = - (event.clientY / renderer.domElement.clientHeight) * 2 + 1;
-
   raycaster.setFromCamera(pointer, camera);
 
-  if (meshs !== undefined && meshs !== null) {
+  // See if the ray from the camera into the world hits one of our meshes
 
-    for (let i = 0; i < meshs.length; i++) {
-      const objectData = meshs[i];
+  if (mesh !== undefined && mesh !== null) {
+    const intersects = raycaster.intersectObject(mesh);
 
-      const intersects = raycaster.intersectObject(objectData.mesh, false);
+    // Toggle rotation bool for meshes that we clicked
+    if (intersects.length > 0) {
 
+<<<<<<< HEAD
       if (intersects.length > 0) {
         selectedObject = objectData;
 
         break;
       }
+=======
+      helper.position.set(0, 0, 0);
+      helper.lookAt(intersects[0].face.normal);
+
+      helper.position.copy(intersects[0].point);
+
+>>>>>>> parent of 93d6d45 (update !)
     }
   }
+
 }
