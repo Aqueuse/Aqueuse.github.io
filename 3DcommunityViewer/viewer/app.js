@@ -50,14 +50,6 @@ function init(url, scale) {
 
   scene.add(skyBox);
 
-  //plane
-  const planeGeometry = new THREE.PlaneGeometry(100000, 100000);
-  const planeMaterial = new THREE.MeshBasicMaterial({ color: "#66f469", side: THREE.DoubleSide });
-  const plane = new THREE.Mesh(planeGeometry, planeMaterial);
-  plane.rotateX(Math.PI / 2);
-  plane.position.y = -110;
-  scene.add(plane);
-
   const outlineMaterial = new THREE.MeshStandardMaterial(
     {
       color: "#ff0000",
