@@ -90,6 +90,9 @@ function init(url, scale) {
   })
 
   // Lights
+  const dirLight1 = new THREE.DirectionalLight(0xffffff);
+  dirLight1.position.set(1, 1, 1);
+  scene.add(dirLight1);
 
   camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 10, 20000);
 
