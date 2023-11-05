@@ -74,14 +74,10 @@ function init(url, scale) {
 
         child.scale.set(scale, scale, scale);
 
-        const material = new THREE.MeshLambertMaterial();
-        //child.material = material;
-
         meshs.push({
           id: meshs.length,
           name: child.name,
-          mesh: child,
-          outlineMesh: newMesh
+          mesh: child
         });
 
         scene.add(newMesh);
