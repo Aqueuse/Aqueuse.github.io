@@ -115,8 +115,8 @@ function init(url, scale) {
 
 
   controls.target.y = 100;
-  camera.position.y = controls.target.y + 2000;
-  camera.position.x = 4000;
+  camera.position.y = controls.target.y + 200;
+  camera.position.x = 400;
 
   controls.update();
 
