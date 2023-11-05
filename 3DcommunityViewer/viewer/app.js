@@ -75,7 +75,7 @@ function init(url, scale) {
         child.scale.set(scale, scale, scale);
 
         const material = new THREE.MeshLambertMaterial();
-        child.material = material;
+        //child.material = material;
 
         meshs.push({
           id: meshs.length,
