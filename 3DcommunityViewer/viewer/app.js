@@ -55,7 +55,7 @@ function init(url, scale) {
   const planeMaterial = new THREE.MeshBasicMaterial({ color: "#66f469", side: THREE.DoubleSide });
   const plane = new THREE.Mesh(planeGeometry, planeMaterial);
   plane.rotateX(Math.PI / 2);
-  plane.position.y = -100;
+  plane.position.y = -110;
   scene.add(plane);
 
   const outlineMaterial = new THREE.MeshStandardMaterial(
