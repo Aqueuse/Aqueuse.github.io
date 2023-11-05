@@ -40,14 +40,10 @@ function init(url, scale) {
   scene = new THREE.Scene();
   scene.background = new THREE.Color(0xbfd1e5);
 
-  //fog
-//  scene.fog = new THREE.Fog(0xbfd1e5, 1000, 10000);
-
   //skybox
-  const skySphereGeometry = new THREE.SphereGeometry(10000, 32, 32);
-  const skyMaterial = new THREE.MeshBasicMaterial({ color: 0x9999ff, side: THREE.BackSide });
-  skyBox = new THREE.Mesh(skySphereGeometry, skyMaterial);
-
+  const skyBoxGeometry = new THREE.BoxGeometry(10000, 10000, 10000);
+  const skyBoxMaterial = new THREE.MeshBasicMaterial({ color: 0x9999ff, side: THREE.BackSide });
+  skyBox = new THREE.Mesh(skyBoxGeometry, skyBoxMaterial);
   scene.add(skyBox);
 
   let fbxLoader = new FBXLoader();
@@ -83,8 +79,7 @@ function init(url, scale) {
   // Lights
   const dirLight1 = new THREE.DirectionalLight(0xffffff);
   dirLight1.position.set(1, 1, 1);
-  dirLight1.rotation.set(0, 45, 0);
-  scene.add(dirLight1);
+  scene.add(dirLight1.target);
 
   camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 10, 20000);
 
