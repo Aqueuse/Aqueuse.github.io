@@ -81,8 +81,9 @@ function init(url, scale) {
         let newMesh = child.clone();
 
         newMesh.material = outlineMaterial.clone();
-        newMesh.scale.multiplyScalar(1.05);
-        newMesh.visible = true;
+        //newMesh.scale.multiplyScalar(1.05);
+        child.scale.set(scale, scale, scale);
+        //newMesh.visible = true;
 
         const material = new THREE.MeshLambertMaterial();
         child.material = material;
@@ -115,8 +116,8 @@ function init(url, scale) {
 
 
   controls.target.y = 100;
-  camera.position.y = controls.target.y + 200;
-  camera.position.x = 400;
+  camera.position.y = controls.target.y + 2000;
+  camera.position.x = 4000;
 
   controls.update();
 
