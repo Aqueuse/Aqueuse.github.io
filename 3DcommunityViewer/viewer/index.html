@@ -10,8 +10,18 @@
 
 <body>
   <div id="container"></div>
-  <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
 
+
+  <div class="model">
+    <p id="model-name">Name</p>
+    <p id="model-description">Description : </p>
+    <p>
+      <a id="model-user">Test A</a> à utiliser c'est point pour se model
+    </p>
+    <button id="model-name-download">Download</button>
+  </div>
+
+  <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
   <script type="importmap">
 			{
 				"imports": {
@@ -20,8 +30,6 @@
 				}
 			}
 	</script>
-
-
   <script type="module" src="app.js"></script>
 </body>
 
