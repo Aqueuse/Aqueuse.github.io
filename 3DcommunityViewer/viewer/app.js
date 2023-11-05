@@ -50,15 +50,6 @@ function init(url, scale) {
 
   scene.add(skyBox);
 
-  const outlineMaterial = new THREE.MeshStandardMaterial(
-    {
-      color: "#ff0000",
-      side: THREE.BackSide,
-      emissive: "#ff0000",
-      emissiveIntensity: 1.5,
-    });
-
-
   let fbxLoader = new FBXLoader();
 
   fbxLoader.load(url, function (object) {
@@ -92,6 +83,7 @@ function init(url, scale) {
   // Lights
   const dirLight1 = new THREE.DirectionalLight(0xffffff);
   dirLight1.position.set(1, 1, 1);
+  dirLight1.rotation.set(0, 45, 0);
   scene.add(dirLight1);
 
   camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 10, 20000);
