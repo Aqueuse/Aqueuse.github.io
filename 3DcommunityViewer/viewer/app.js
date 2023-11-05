@@ -1,10 +1,7 @@
 
 import * as THREE from 'three';
 
-//import Stats from 'three/addons/libs/stats.module.js';
-
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 //fbx
 import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
 //export
@@ -16,7 +13,6 @@ let camera, controls, scene, renderer;
 let meshs = [];
 
 let skyBox;
-let helper;
 
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2();
@@ -45,10 +41,9 @@ function init(url, scale) {
   scene.background = new THREE.Color(0xbfd1e5);
 
   //fog
-  scene.fog = new THREE.Fog(0xbfd1e5, 1000, 10000);
+//  scene.fog = new THREE.Fog(0xbfd1e5, 1000, 10000);
 
   //skybox
-  //const skyBoxGeometry = new THREE.BoxGeometry(10000, 10000, 10000);
   const skySphereGeometry = new THREE.SphereGeometry(10000, 32, 32);
   const skyMaterial = new THREE.MeshBasicMaterial({ color: 0x9999ff, side: THREE.BackSide });
   skyBox = new THREE.Mesh(skySphereGeometry, skyMaterial);
@@ -108,33 +103,7 @@ function init(url, scale) {
     scene.add(object);
   })
 
-  /*var loader = new GLTFLoader();
-  loader.load(
-    url,
-    function (gltf) {
-      console.log(gltf);
-      gltf.scene.scale.set(scale, scale, scale);
-      scene.add(gltf.scene);
-
-      mesh = gltf.scene
-      //find ligth
-      const lights = [];
-      gltf.scene.traverse(function (child) {
-        console.log(child);
-        if (child.isLight) lights.push(child);
-      }
-      );
-
-      console.log(lights);
-
-    },
-  );*/
-
   // Lights
-
-  //const dirLight1 = new THREE.DirectionalLight(0xffffff);
-  //dirLight1.position.set(1, 1, 1);
-  //scene.add(dirLight1);
 
   camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 10, 20000);
 
@@ -151,20 +120,8 @@ function init(url, scale) {
 
   controls.update();
 
-  //const geometryHelper = new THREE.SphereGeometry(50, 32, 32);
-
-  //geometryHelper.translate(0, 50, 0);
-  //geometryHelper.rotateX(Math.PI / 2);
-
-  //helper = new THREE.Mesh(geometryHelper, new THREE.MeshNormalMaterial());
-
-  //scene.add(helper);
-
-
   container.addEventListener('pointermove', onPointerMove);
   container.addEventListener('click', onPointerClick);
-  //stats = new Stats();
-  //container.appendChild(stats.dom);
   window.addEventListener('resize', onWindowResize);
 }
 
@@ -181,7 +138,6 @@ function animate() {
   skyBox.position.copy(camera.position);
 
   render();
-  //stats.update();
 }
 
 function render() {
@@ -193,9 +149,6 @@ const modelDescription = document.body.querySelector("#model-description");
 const modelUser = document.body.querySelector("#model-user");
 
 const modelNameDownload = document.body.querySelector("#model-name-download");
-
-//disable download button
-//modelNameDownload.style.visibility = "hidden";
 
 let selectedObject = null;
 
@@ -267,15 +220,9 @@ function onPointerMove(event) {
       const intersects = raycaster.intersectObject(objectData.mesh, false);
 
       if (intersects.length > 0) {
-
-        //helper.position.set(0, 0, 0);
-        //helper.lookAt(intersects[0].face.normal);
-        //helper.position.copy(intersects[0].point);
-
         selectedObject = objectData;
 
         break;
-
       }
     }
   }
