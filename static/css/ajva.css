@@ -19,7 +19,8 @@ body {
 
   .background {
     position: absolute;
-    width: 100%;
+    width: 110%;
+    background-size: cover;
     height: auto;
     top:0px;
   }
@@ -28,46 +29,56 @@ body {
     position: absolute;
     width: 100%;
     height: auto;
-    top:200vh;
+    top:100vh;
+    left: 7vw;
   }
 
   .foreground {
     position: absolute;
     width: 100%;
     height: auto;
-    top:330vh;
+    top:80vh;
+    left: 10%;
   }
 
-  .foreground-text {
-    background-color: #5E606E;
-    width: 100%;
-    height: 200vh;
+  .block-text {
+    position: absolute;
+    width: 80%;
+    left: 55%;
+    transform: translate(-50%, 0%);
+    height: auto;
+    top:60vh;
+
+    background-color: #005d7187;
     font-size: 30px;
+    z-index: 1;
   }
 
-  .foreground-sub-container {
-    display: grid;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+  .block-social-networks {
+    position : absolute;
+    right: 0px;
+    padding: 1%;
   }
 
   .text {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
     font-family: 'Pixelify Sans', sans-serif;
     font-size: 2vw;
-    color: #B5B5B5;
+    color: #ffffff;
   }
 
 b {
-  color: #FEFEFE;
+  color: #d1d1d1;
   font-weight: bold;
 }
 
 .centered-text {
   text-align: center;
+}
+
+a {
+  color: #d1d1d1;
 }
 
 .bigger { 
