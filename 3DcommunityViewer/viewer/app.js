@@ -58,7 +58,7 @@ function init(url, scale) {
     });
 
     mesh = object;
-    mesh.scale = scale;
+    mesh.scale.multiplyScalar(scale);
     
     scene.add(object);
   })
