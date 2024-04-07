@@ -1,85 +1,76 @@
-@font-face {
-    font-family: "Pixelify Sans";
-    src: url("../fonts/PixelifySans-Regular.ttf");
-}
-
 body {
-    margin: 0;
-    background-color: #2FBDFF;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-  
-  /* parallax "viewport" */
-  .parallax {
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-  } 
-
-  .background {
-    position: absolute;
-    width: 110%;
-    background-size: cover;
-    height: auto;
-    top:0px;
-  }
-
-  .middle {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top:100vh;
-  }
-
-  .foreground {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top:80vh;
-    left: 3%;
-  }
-
-  .block-text {
-    position: absolute;
-    width: 80%;
-    left: 55%;
-    transform: translate(-50%, 0%);
-    height: auto;
-    top:60vh;
-
-    background-color: #005d7187;
-    font-size: 30px;
-    z-index: 1;
-  }
-
-  .block-social-networks {
-    position : absolute;
-    right: 0px;
-    padding: 1%;
-  }
-
-  .text {
-    padding-left: 7vw;
-    padding-right: 7vw;
-    font-family: 'Pixelify Sans', sans-serif;
-    font-size: 2vw;
-    color: #ffffff;
-  }
-
-b {
-  color: #d1d1d1;
-  font-weight: bold;
+  margin:0%;
+  background-image: url("../images/projects/ajva/back.png");
 }
 
-.centered-text {
-  text-align: center;
+header {
+  background-color: #005d71;
+  color: #fff;
+}
+
+.conteneur-bandeau {
+  display: flex;
+  align-items: center;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 100px;
+  margin-right: 20px;
+  padding-left:100px;
+}
+
+nav {
+  margin: 0 auto;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "ObjectSans", Sans-serif;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+.bouton-discord {
+  height: 30px;
+  margin-left: 20px;
+  padding-right:100px;
+}
+
+.text {
+  font-family: "ObjectSans", Sans-serif;
+  font-size: 18px;
 }
 
 a {
-  color: #d1d1d1;
+  color:#49484d;
+  font-size: 19px;
 }
 
-.bigger { 
-  font-size: 2.5vw;
+main {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2%;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 50px;
+}
+
+hr {
+  width:30%;
+  border-bottom: 5px solid #000;
+}
+
+p {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
 }
