@@ -1,0 +1,25 @@
+.ascii-train-animation {
+  position: absolute;
+  width: 98%;
+  height: 20%;
+  top: 110%;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+.ascii-train {
+  position: absolute;
+  bottom: 0px;
+   zoom: 8%;
+   font-family: Courier;
+   color: white;
+   font-size:8pt;
+   font-weight: bold;
+}
+.ascii-station {
+  position: absolute;
+  zoom: 7%;
+  left: 47%;
+  bottom: 0px;   
+  color: white;
+}

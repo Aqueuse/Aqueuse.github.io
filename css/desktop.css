@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "DejaVu Serif", serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.blackText {
+    color: black;
+}
+
+.block {
+    padding-top: 1em;
+    width: 100vw;
+}
+
+.bluebg {
+    background-color: #000249;
+}
+
+.whitebg {
+    background-color: white;
+}
+
+.bluebg > * {
+    color: white;
+}
+
+.burger {
+    display: none;
+}
+
+header{
+    background-color: #000249;
+
+}
+.navbar {
+    width: 100vw;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    background-color: #000249;
+}
+
+.navbar-off {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-off > span {
+    padding: 1em;
+    font-size: 2em;
+
+}
+.navbar-off>span a{
+    color: white;
+    text-decoration: none;
+}
+
+
+#servicesNav {
+    color: #FF6936;
+}
+
+
+.bienvenueParagraph {
+    position: relative;
+    padding: 1em 4em 1em 4em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.logo {
+    width: 45%;
+    height: auto;
+    text-align: center;
+}
+
+
+.firstBlockText {
+    padding: 0;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.firstBlockTextContainer {
+    padding: 7vh 0;
+    text-align: center;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 4em;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 1.5em;
+}
+
+.socialNetwork_logoContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 2em;
+}
+
+.socialNetwork_logo {
+    color:white;
+    width: 2vw;
+    height: auto;
+    opacity: 30%;
+}
+
+.socialNetwork_logo:hover {
+    opacity: 95%;
+}
+
+.servicesContainer {
+    padding: 2vw 8vw 2vw 8vw;
+    display: flex;
+    text-align: center;
+    gap: 8vw;
+}
+
+.realisationsTitle {
+    font-size: xx-large;
+    padding: 1.5em;
+}
+
+.photo {
+    border-radius: 10em;
+}
+
+.contactContainer {
+    display: flex;
+    padding: 4em;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.contactTitle {
+    padding-top: 0.4em;
+}
+
+.contactLogo {
+    height: 30vh;
+    aspect-ratio: 1;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer {
+    padding: 0.5em;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.footer a {
+    color: skyblue;
+}
+
+.topButton {
+    position: fixed;
+    bottom: 4%;
+    right: 16px;
+    text-decoration: none;
+    color: #000249;
+    border: 2px solid #000249;
+    box-shadow: 2px 2px #000249;
+    font-size: 2.85em;
+    line-height: .85em;
+    display: none;
+    font-weight: 600;
+    letter-spacing: .05em;
+    padding: 3px 5px;
+    white-space: nowrap;
+    background-color: white;
+}
+
+/* PROJECTS  */
+
+.oursagileProject, .nekoProject, .poseidonProject, .twitchdevProject, .skyaboveProject, .cloudwordsProject {
+    border: 4px double slategray;
+    padding: 3em;
+}
+
+.oursagileProject:hover, .nekoProject:hover, .poseidonProject:hover, .twitchdevProject:hover, .skyaboveProject:hover, .cloudwordsProject:hover {
+    cursor: pointer;
+}
+
+.oursagileProject {
+    grid-area: oursagile;
+}
+
+.nekoProject {
+    grid-area: neko;
+}
+
+.poseidonProject {
+    grid-area: poseidon;
+}
+
+.twitchdevProject {
+    grid-area: twitchdev;
+}
+
+.skyaboveProject {
+    grid-area: skyabove;
+}
+
+.cloudwordsProject {
+    grid-area: cloudwords;
+}
+
+.projectsContainerGrid {
+    padding: 2% 2% 4% 2%;
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr; /* fr=fraction */
+    grid-template-areas:
+    "oursagile  neko     poseidon"
+    "cloudwords  skyabove twitchdev";
+/*    background-color: #fff; */
+    color: white;
+}
+
+.projectsContainerGrid a {
+    color: #000249;
+}
+
+.logoImg {
+    display: block;
+    margin: 1em auto 0;
+    height: 14%;
+    width: auto;
+}

@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "FORCED_SQUARE";
+    src: url("../bananaMan/static/FORCED_SQUARE.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'FORCED_SQUARE';
+}
+
+body {
+    background-image: url("./static/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    margin: auto;
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+    border: 3px solid green;
+    padding: 30px;
+    padding-top: 10px;
+    font-family: 'Lora', serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    border-radius: 30px;
+}
+
+
+footer {
+    border-top: 2px solid #dfc628;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#container {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 5px;
+    background-color: rgb(38 38 38 / 42%);
+    color: #e9e8e3;
+    text-align: center;
+    overflow: hidden;
+}
+
+#logo {
+    width: 70%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.liseret {
+    background-color: white;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: 4px;
+    margin-bottom: 40px;
+}
+
+h1,
+h2 {
+    color: #dfc628;
+}
+
+pre {
+    font-size: x-large;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+#switch-lang {
+    padding: 10px 40px 40px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap:10px;
+    font-size: x-large;
+}
+
+.lang:hover {
+    color: #dfc628;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.social-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:25px;
+}
+
+.social-img {
+    width: 50px;
+    height: auto;
+}

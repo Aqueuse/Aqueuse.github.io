@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24px"
+   height="24px"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg853"
+   sodipodi:docname="linkedin.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <metadata
+     id="metadata859">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs857" />
+  <sodipodi:namedview
+     inkscape:pagecheckerboard="true"
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview855"
+     showgrid="false"
+     inkscape:zoom="30.625"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg853" />
+  <path
+     id="path847"
+     d="M 0,0 H 24 V 24 H 0 Z"
+     fill="none" />
+  <path
+     id="path849"
+     d="M 1.4512472,0.02857143 H 22.646712 A 1.3247166,1.3265306 0 0 1 23.971429,1.355102 v 21.22449 a 1.3247166,1.3265306 0 0 1 -1.324717,1.32653 H 1.4512472 A 1.3247166,1.3265306 0 0 1 0.12653061,22.579592 V 1.355102 A 1.3247166,1.3265306 0 0 1 1.4512472,0.02857143 Z M 2.7759637,2.6816327 V 21.253061 H 21.321996 V 2.6816327 Z M 6.087755,7.9877551 a 1.9870748,1.989796 0 1 1 0,-3.9795919 1.9870748,1.989796 0 0 1 0,3.9795919 z M 4.7630386,9.314286 h 2.649433 v 9.948979 h -2.649433 z m 7.2859404,0.5704082 c 0.773635,-0.7494899 1.677092,-1.2336739 2.649434,-1.2336739 2.743487,0 4.636508,2.2272457 4.636508,4.9744897 v 5.637755 H 16.685487 V 13.62551 a 2.3182541,2.3214287 0 0 0 -4.636508,0 v 5.637755 H 9.399547 V 9.314286 h 2.649432 z"
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32562;stroke-opacity:1" />
+</svg>
